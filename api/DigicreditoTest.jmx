@@ -29,7 +29,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">D:/Usuarios/analista.pruebas6/Documents/Apache-jmeter/apache-jmeter-5.4.1/bin/examples/variablesDigicredito.csv</stringProp>
+          <stringProp name="filename">../environment/variablesDigicredito.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">true</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -60,8 +60,8 @@
               <stringProp name="Argument.value">ALCALDÍA DE FLORENCIA ACTIVOS</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="pruebaBD" elementType="Argument">
-              <stringProp name="Argument.name">pruebaBD</stringProp>
+            <elementProp name="calculosSimuladorExterno" elementType="Argument">
+              <stringProp name="Argument.name">calculosSimuladorExterno</stringProp>
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -315,16 +315,66 @@
               <stringProp name="Argument.value">32112345</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="periodoPrima" elementType="Argument">
+              <stringProp name="Argument.name">periodoPrima</stringProp>
+              <stringProp name="Argument.value">24</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoCuotaCorriente" elementType="Argument">
+              <stringProp name="Argument.name">calculoCuotaCorriente</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoGmf41000" elementType="Argument">
+              <stringProp name="Argument.name">calculoGmf41000</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoMontoMaxDesembolsar" elementType="Argument">
+              <stringProp name="Argument.name">calculoMontoMaxDesembolsar</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoMontoSolicitar" elementType="Argument">
+              <stringProp name="Argument.name">calculoMontoSolicitar</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoValorInteresesIniciales" elementType="Argument">
+              <stringProp name="Argument.name">calculoValorInteresesIniciales</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoPrimaAnticipadaSeguro" elementType="Argument">
+              <stringProp name="Argument.name">calculoPrimaAnticipadaSeguro</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoRemanenteEstimado" elementType="Argument">
+              <stringProp name="Argument.name">calculoRemanenteEstimado</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoEstudioCreditoIva" elementType="Argument">
+              <stringProp name="Argument.name">calculoEstudioCreditoIva</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoFianza" elementType="Argument">
+              <stringProp name="Argument.name">calculoFianza</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="false">
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
           <boolProp name="autocommit">true</boolProp>
           <stringProp name="checkQuery">select 1</stringProp>
           <stringProp name="connectionAge">5000</stringProp>
           <stringProp name="connectionProperties"></stringProp>
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="dbUrl">jdbc:postgresql://libranzas-preproduccion.chimul6agbmw.us-east-1.rds.amazonaws.com:5432/libranzas_instancia6</stringProp>
+          <stringProp name="dbUrl">jdbc:postgresql://libranzas-preproduccion.chimul6agbmw.us-east-1.rds.amazonaws.com:5432/libranzas_instancia4</stringProp>
           <stringProp name="driver">org.postgresql.Driver</stringProp>
           <stringProp name="initQuery"></stringProp>
           <boolProp name="keepAlive">true</boolProp>
@@ -336,19 +386,6 @@
           <stringProp name="trimInterval">60000</stringProp>
           <stringProp name="username">abacus</stringProp>
         </JDBCDataSource>
-        <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request" enabled="false">
-          <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">select myFuncion2(2,3);</stringProp>
-          <stringProp name="queryArguments"></stringProp>
-          <stringProp name="queryArgumentsTypes"></stringProp>
-          <stringProp name="queryTimeout"></stringProp>
-          <stringProp name="queryType">Select Statement</stringProp>
-          <stringProp name="resultSetHandler">Store as Object</stringProp>
-          <stringProp name="resultSetMaxRows"></stringProp>
-          <stringProp name="resultVariable">pruebaBD</stringProp>
-          <stringProp name="variableNames"></stringProp>
-        </JDBCSampler>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Obtener Token" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -694,6 +731,37 @@ for(int i=0;i&lt;lineaCredito.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request simulaodr externo" enabled="true">
+          <stringProp name="dataSource">postgres</stringProp>
+          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="resultVariable">calculosSimuladorExterno</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">Object calculosSimuladorExterno = vars.getObject(&quot;calculosSimuladorExterno&quot;);
+vars.put(&quot;calculoGmf41000&quot;, calculosSimuladorExterno.get(0).get(&quot;r_gmf4100&quot;).toString());
+vars.put(&quot;calculoCuotaCorriente&quot;, calculosSimuladorExterno.get(0).get(&quot;r_cuota_corriente&quot;).toString());
+vars.put(&quot;calculoMontoMaxDesembolsar&quot;, calculosSimuladorExterno.get(0).get(&quot;r_monto_max_desembolsar&quot;).toString());
+vars.put(&quot;calculoMontoSolicitar&quot;, calculosSimuladorExterno.get(0).get(&quot;r_monto_solicitar&quot;).toString());
+vars.put(&quot;calculoValorInteresesIniciales&quot;, calculosSimuladorExterno.get(0).get(&quot;r_valor_intereses_iniciales&quot;).toString());
+vars.put(&quot;calculoPrimaAnticipadaSeguro&quot;, calculosSimuladorExterno.get(0).get(&quot;r_prima_anticipada_seguro&quot;).toString());
+vars.put(&quot;calculoRemanenteEstimado&quot;, calculosSimuladorExterno.get(0).get(&quot;r_remanente_estimado&quot;).toString());
+vars.put(&quot;calculoEstudioCreditoIva&quot;, calculosSimuladorExterno.get(0).get(&quot;r_estudio_credito_iva&quot;).toString());
+vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_fianza&quot;).toString());
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -833,16 +901,16 @@ vars.put(&quot;idSimulacion&quot;,simulacion.get(&quot;idSimulacion&quot;).toStr
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="false">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg" elementType="HTTPFileArg">
-                <stringProp name="File.path">D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg</stringProp>
+              <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/img/cliente.jpg</stringProp>
                 <stringProp name="File.paramname">archivoIdentificacion1</stringProp>
                 <stringProp name="File.mimetype">image/jpg</stringProp>
               </elementProp>
-              <elementProp name="D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg" elementType="HTTPFileArg">
-                <stringProp name="File.path">D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg</stringProp>
+              <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/img/cliente.jpg</stringProp>
                 <stringProp name="File.paramname">archivoIdentificacion2</stringProp>
                 <stringProp name="File.mimetype">image/jpg</stringProp>
               </elementProp>
@@ -1057,11 +1125,11 @@ vars.put(&quot;idCliente&quot;,RegistrarCliente.get(&quot;idCliente&quot;).toStr
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar registro de cliente" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar registro de cliente" enabled="false">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg" elementType="HTTPFileArg">
-                <stringProp name="File.path">D:\Usuarios\analista.pruebas6\Pictures\cliente.jpg</stringProp>
+              <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/img/cliente.jpg</stringProp>
                 <stringProp name="File.paramname">archivoFoto</stringProp>
                 <stringProp name="File.mimetype">image/jpg</stringProp>
               </elementProp>
@@ -1155,7 +1223,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar notificación OTP prospección" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar notificación OTP prospección" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1918,13 +1986,13 @@ for(int i=0;i&lt;documento.length();i++){
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Calcular / Guardar endeudamiento" enabled="false">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="D:\Usuarios\analista.pruebas6\Documents\Apache-jmeter\apache-jmeter-5.4.1\bin\examples\PDFPRUEBA.pdf" elementType="HTTPFileArg">
-                <stringProp name="File.path">D:\Usuarios\analista.pruebas6\Documents\Apache-jmeter\apache-jmeter-5.4.1\bin\examples\PDFPRUEBA.pdf</stringProp>
+              <elementProp name="../public/docs/PDFPRUEBA.pdf" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/docs/PDFPRUEBA.pdf</stringProp>
                 <stringProp name="File.paramname">archivo</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
-              <elementProp name="D:\Usuarios\analista.pruebas6\Documents\Apache-jmeter\apache-jmeter-5.4.1\bin\examples\PDFPRUEBA.pdf" elementType="HTTPFileArg">
-                <stringProp name="File.path">D:\Usuarios\analista.pruebas6\Documents\Apache-jmeter\apache-jmeter-5.4.1\bin\examples\PDFPRUEBA.pdf</stringProp>
+              <elementProp name="../public/docs/PDFPRUEBA.pdf" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/docs/PDFPRUEBA.pdf</stringProp>
                 <stringProp name="File.paramname">archivoIngresosAdicionales</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
