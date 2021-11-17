@@ -360,6 +360,271 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="entidadBancaria" elementType="Argument">
+              <stringProp name="Argument.name">entidadBancaria</stringProp>
+              <stringProp name="Argument.value">Bancolombia</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idEntidadBancaria" elementType="Argument">
+              <stringProp name="Argument.name">idEntidadBancaria</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="numeroCuenta" elementType="Argument">
+              <stringProp name="Argument.name">numeroCuenta</stringProp>
+              <stringProp name="Argument.value">2489876354</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idTipoCuenta" elementType="Argument">
+              <stringProp name="Argument.name">idTipoCuenta</stringProp>
+              <stringProp name="Argument.value">AHORROS</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idModalidadDesembolso" elementType="Argument">
+              <stringProp name="Argument.name">idModalidadDesembolso</stringProp>
+              <stringProp name="Argument.value">PAGO_MASIVO</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idTipoCliente" elementType="Argument">
+              <stringProp name="Argument.name">idTipoCliente</stringProp>
+              <stringProp name="Argument.value">Producto Reportado</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="paisNacimiento" elementType="Argument">
+              <stringProp name="Argument.name">paisNacimiento</stringProp>
+              <stringProp name="Argument.value">Colombia</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="lugarNacimiento" elementType="Argument">
+              <stringProp name="Argument.name">lugarNacimiento</stringProp>
+              <stringProp name="Argument.value">Bogota</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nacionalidad" elementType="Argument">
+              <stringProp name="Argument.name">nacionalidad</stringProp>
+              <stringProp name="Argument.value">Colombiana</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="estadoCivil" elementType="Argument">
+              <stringProp name="Argument.name">estadoCivil</stringProp>
+              <stringProp name="Argument.value">SOLTERO</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="profesion" elementType="Argument">
+              <stringProp name="Argument.name">profesion</stringProp>
+              <stringProp name="Argument.value">Ingeniero</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="tipoDireccion" elementType="Argument">
+              <stringProp name="Argument.name">tipoDireccion</stringProp>
+              <stringProp name="Argument.value">7</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="barrio" elementType="Argument">
+              <stringProp name="Argument.name">barrio</stringProp>
+              <stringProp name="Argument.value">Castilla</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="direccion" elementType="Argument">
+              <stringProp name="Argument.name">direccion</stringProp>
+              <stringProp name="Argument.value">calle 7a bis #79c 23</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="numeroTelefonico" elementType="Argument">
+              <stringProp name="Argument.name">numeroTelefonico</stringProp>
+              <stringProp name="Argument.value">9007145</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="mesesResidenciaActual" elementType="Argument">
+              <stringProp name="Argument.name">mesesResidenciaActual</stringProp>
+              <stringProp name="Argument.value">25</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="numeroHijos" elementType="Argument">
+              <stringProp name="Argument.name">numeroHijos</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="personasACargo" elementType="Argument">
+              <stringProp name="Argument.name">personasACargo</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="tieneVehiculo" elementType="Argument">
+              <stringProp name="Argument.name">tieneVehiculo</stringProp>
+              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombre1" elementType="Argument">
+              <stringProp name="Argument.name">nombre1</stringProp>
+              <stringProp name="Argument.value">lorena</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombre2" elementType="Argument">
+              <stringProp name="Argument.name">nombre2</stringProp>
+              <stringProp name="Argument.value">katerine</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="apellido1" elementType="Argument">
+              <stringProp name="Argument.name">apellido1</stringProp>
+              <stringProp name="Argument.value">guzman</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="apellido2" elementType="Argument">
+              <stringProp name="Argument.name">apellido2</stringProp>
+              <stringProp name="Argument.value">ramirez</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identificacionConyuge" elementType="Argument">
+              <stringProp name="Argument.name">identificacionConyuge</stringProp>
+              <stringProp name="Argument.value">52852963</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="actividadEconomica" elementType="Argument">
+              <stringProp name="Argument.name">actividadEconomica</stringProp>
+              <stringProp name="Argument.value">empleada</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="empresaTrabajo" elementType="Argument">
+              <stringProp name="Argument.name">empresaTrabajo</stringProp>
+              <stringProp name="Argument.value">mederi</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="cargo" elementType="Argument">
+              <stringProp name="Argument.name">cargo</stringProp>
+              <stringProp name="Argument.value">enfermera</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="telefonoTrabajo" elementType="Argument">
+              <stringProp name="Argument.name">telefonoTrabajo</stringProp>
+              <stringProp name="Argument.value">7210274</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="extensionTrabajo" elementType="Argument">
+              <stringProp name="Argument.name">extensionTrabajo</stringProp>
+              <stringProp name="Argument.value">1285</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="cartaLaboral" elementType="Argument">
+              <stringProp name="Argument.name">cartaLaboral</stringProp>
+              <stringProp name="Argument.value">Certificación laboral</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idCartaLaboral" elementType="Argument">
+              <stringProp name="Argument.name">idCartaLaboral</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fechaIngreso" elementType="Argument">
+              <stringProp name="Argument.name">fechaIngreso</stringProp>
+              <stringProp name="Argument.value">2021-05-25</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="actividadDatosLaborales" elementType="Argument">
+              <stringProp name="Argument.name">actividadDatosLaborales</stringProp>
+              <stringProp name="Argument.value">PENSIONADO</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nitAfiliacion" elementType="Argument">
+              <stringProp name="Argument.name">nitAfiliacion</stringProp>
+              <stringProp name="Argument.value">45678965</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idCartaLaboral" elementType="Argument">
+              <stringProp name="Argument.name">idCartaLaboral</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="cargo" elementType="Argument">
+              <stringProp name="Argument.name">cargo</stringProp>
+              <stringProp name="Argument.value">Desarrollador</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="tipoPension" elementType="Argument">
+              <stringProp name="Argument.name">tipoPension</stringProp>
+              <stringProp name="Argument.value">TIEMPO DE SERVICIO</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="codigoProgramaNomina" elementType="Argument">
+              <stringProp name="Argument.name">codigoProgramaNomina</stringProp>
+              <stringProp name="Argument.value">78524</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fechaTerminacion" elementType="Argument">
+              <stringProp name="Argument.name">fechaTerminacion</stringProp>
+              <stringProp name="Argument.value">2021-05-31</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="numeroResolucion" elementType="Argument">
+              <stringProp name="Argument.name">numeroResolucion</stringProp>
+              <stringProp name="Argument.value">9638524</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="competidor" elementType="Argument">
+              <stringProp name="Argument.name">competidor</stringProp>
+              <stringProp name="Argument.value">AMERICAS BUSINESS PROCESS SERVICES</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idCompetidor" elementType="Argument">
+              <stringProp name="Argument.name">idCompetidor</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="montoCartera" elementType="Argument">
+              <stringProp name="Argument.name">montoCartera</stringProp>
+              <stringProp name="Argument.value">200000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="valorCuota" elementType="Argument">
+              <stringProp name="Argument.name">valorCuota</stringProp>
+              <stringProp name="Argument.value">50000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fechaVencimiento" elementType="Argument">
+              <stringProp name="Argument.name">fechaVencimiento</stringProp>
+              <stringProp name="Argument.value">2022-05-25</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombresApellidosBeneficiario" elementType="Argument">
+              <stringProp name="Argument.name">nombresApellidosBeneficiario</stringProp>
+              <stringProp name="Argument.value">Andres Alvares</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombresApellidosBeneficiarioDos" elementType="Argument">
+              <stringProp name="Argument.name">nombresApellidosBeneficiarioDos</stringProp>
+              <stringProp name="Argument.value">Thainer Perez</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="porcentaje_asignado" elementType="Argument">
+              <stringProp name="Argument.name">porcentaje_asignado</stringProp>
+              <stringProp name="Argument.value">30</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="porcentaje_asignadoDos" elementType="Argument">
+              <stringProp name="Argument.name">porcentaje_asignadoDos</stringProp>
+              <stringProp name="Argument.value">70</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="parentescoAP" elementType="Argument">
+              <stringProp name="Argument.name">parentescoAP</stringProp>
+              <stringProp name="Argument.value">Amigo</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="parentescoAPDos" elementType="Argument">
+              <stringProp name="Argument.name">parentescoAPDos</stringProp>
+              <stringProp name="Argument.value">Hermano</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombrePlan" elementType="Argument">
+              <stringProp name="Argument.name">nombrePlan</stringProp>
+              <stringProp name="Argument.value">Plan 2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idNombrePlan" elementType="Argument">
+              <stringProp name="Argument.name">idNombrePlan</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -896,7 +1161,7 @@ vars.put(&quot;idSimulacion&quot;,simulacion.get(&quot;idSimulacion&quot;).toStr
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
               <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
@@ -1120,7 +1385,7 @@ vars.put(&quot;idCliente&quot;,RegistrarCliente.get(&quot;idCliente&quot;).toStr
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar registro de cliente" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar registro de cliente" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
               <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
@@ -1218,7 +1483,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar notificación OTP prospección" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar notificación OTP prospección" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -2174,31 +2439,16 @@ if(registrarCliente.get(&quot;valor&quot;)==null || registrarCliente.get(&quot;i
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar medio de desembolso" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-    &quot;numeroCuenta&quot;: &quot;12345&quot;,&#xd;
-    &quot;idTipoCuenta&quot;: &quot;AHORROS&quot;,&#xd;
-    &quot;idDepartamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
-    &quot;idCiudad&quot;: &quot;${idCiudad}&quot;,&#xd;
-    &quot;idModalidadDesembolso&quot;: &quot;EFECTIVO&quot;,&#xd;
-    &quot;idTipoCliente&quot;: &quot;Producto Reportado&quot;,&#xd;
-    &quot;idEntidadFinanciera&quot;: 1&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar entidades bancarias" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/disbursement-mean</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}bank-entities</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2210,28 +2460,18 @@ if(registrarCliente.get(&quot;valor&quot;)==null || registrarCliente.get(&quot;i
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
-              <elementProp name="Authorization" elementType="Header">
+              <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
                 <stringProp name="Header.value">Bearer   ${token}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
 Failure=!Estado;
 FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
 
-String response_data = prev.getResponseDataAsString ();
-JSONObject registrarCliente= new JSONObject(response_data);
-
-if(registrarCliente.get(&quot;idCliente&quot;)==null || registrarCliente.get(&quot;idCredito&quot;)==null){
-	Failure=true;
-	FailureMessage=&quot;No se genero idCliente o idCredito&quot;;	
-	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-  }
 
 
 </stringProp>
@@ -2277,20 +2517,1350 @@ if(registrarCliente.get(&quot;idCliente&quot;)==null || registrarCliente.get(&qu
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">import org.json.*;
 
 String response_data = prev.getResponseDataAsString ();
-JSONObject RegistrarCliente = new JSONObject(response_data);
-log.info(&quot;Id credito nuevo: &quot;+RegistrarCliente.get(&quot;idCredito&quot;));
-log.info(&quot;Id cliente nuevo: &quot;+RegistrarCliente.get(&quot;idCliente&quot;));
-vars.put(&quot;idCredito&quot;,RegistrarCliente.get(&quot;idCredito&quot;).toString());	 
-vars.put(&quot;idCliente&quot;,RegistrarCliente.get(&quot;idCliente&quot;).toString());	     
-</stringProp>
+JSONArray entidadBancaria = new JSONArray(response_data);
+
+for(int i=0;i&lt;entidadBancaria.length();i++){
+   if(entidadBancaria.get(i).get(&quot;nombre&quot;).equals(&quot;${entidadBancaria}&quot;)){
+	   log.info(&quot;Id entidad bancaria: &quot;+entidadBancaria.get(i).get(&quot;id&quot;));
+	   vars.put(&quot;idEntidadBancaria&quot;,entidadBancaria.get(i).get(&quot;id&quot;).toString());	   
+   }
+}</stringProp>
           </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar medio de desembolso" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;numeroCuenta&quot;: &quot;${numeroCuenta}&quot;,&#xd;
+    &quot;idTipoCuenta&quot;: &quot;${idTipoCuenta}&quot;,&#xd;
+    &quot;idDepartamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+    &quot;idCiudad&quot;: &quot;${idCiudad}&quot;,&#xd;
+    &quot;idModalidadDesembolso&quot;: &quot;${idModalidadDesembolso}&quot;,&#xd;
+    &quot;idTipoCliente&quot;: &quot;${idTipoCliente}&quot;,&#xd;
+    &quot;idEntidadFinanciera&quot;: ${idEntidadBancaria}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/disbursement-mean</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos básicos" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;paisNacimiento&quot;: &quot;${paisNacimiento}&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
+        &quot;genero&quot;: &quot;${genero}&quot;&#xd;
+    },&#xd;
+    &quot;credito&quot;:{&#xd;
+        &quot;estadoCivil&quot;: &quot;${estadoCivil}&quot;,&#xd;
+        &quot;profesion&quot;: &quot;${profesion}&quot;&#xd;
+    }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/basic-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos adicionales" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;direcciones&quot;: [&#xd;
+            {&#xd;
+                &quot;tipo&quot;: &quot;7&quot;,&#xd;
+                &quot;direccion&quot;: &quot;${direccion}&quot;,&#xd;
+                &quot;barrio&quot;: &quot;${barrio}&quot;,&#xd;
+                &quot;departamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+                &quot;ciudad&quot;: &quot;${idCiudad}&quot;&#xd;
+            },&#xd;
+            {&#xd;
+                &quot;tipo&quot;: &quot;9&quot;,&#xd;
+                &quot;direccion&quot;: &quot;${direccion}&quot;,&#xd;
+                &quot;barrio&quot;: &quot;${barrio}&quot;,&#xd;
+                &quot;departamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+                &quot;ciudad&quot;: &quot;${idCiudad}&quot;&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;telefonos&quot;: [&#xd;
+            {&#xd;
+                &quot;numeroTelefonico&quot;: &quot;${numeroTelefonico}&quot;&#xd;
+            }&#xd;
+        ]&#xd;
+    },&#xd;
+    &quot;credito&quot;:{&#xd;
+        &quot;mesesResidenciaActual&quot;: ${mesesResidenciaActual},&#xd;
+        &quot;numeroHijos&quot;: ${numeroHijos},&#xd;
+        &quot;personasACargo&quot;: ${personasACargo},&#xd;
+        &quot;tieneVehiculo&quot;: ${tieneVehiculo}&#xd;
+    }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/additional-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos conyuge" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;nombre1&quot;: &quot;${nombre1}&quot;,&#xd;
+    &quot;nombre2&quot;: &quot;${nombre2}&quot;,&#xd;
+    &quot;apellido1&quot;: &quot;${apellido1}&quot;,&#xd;
+    &quot;apellido2&quot;: &quot;${apellido2}&quot;,&#xd;
+    &quot;idTipo&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
+    &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
+    &quot;email&quot;: ${email},&#xd;
+    &quot;telefonoResidencia&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
+    &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+    &quot;actividadEconomica&quot;: &quot;${actividadEconomica}&quot;,&#xd;
+    &quot;empresaTrabajo&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
+    &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+    &quot;idDepartamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
+    &quot;idCiudadTrabajo&quot;: &quot;${idCiudad}&quot;,&#xd;
+    &quot;telefonoTrabajo&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
+    &quot;extensionTrabajo&quot;: &quot;${extensionTrabajo}&quot;,&#xd;
+    &quot;telefonoCelular&quot;: &quot;${celular}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/spouse-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar documentos datos laborales" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}documents?process=DATOS_LABORALES</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString ();
+JSONArray documento = new JSONArray(response_data);
+
+for(int i=0;i&lt;documento.length();i++){
+   if(documento.get(i).get(&quot;nombre&quot;).equals(&quot;${cartaLaboral}&quot;)){
+	   log.info(&quot;Id documento carta laboral : &quot;+documento.get(i).get(&quot;id&quot;));
+	   vars.put(&quot;idCartaLaboral&quot;,documento.get(i).get(&quot;id&quot;).toString());	   
+   }
+}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos laborales" enabled="true">
+          <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+            <collectionProp name="HTTPFileArgs.files">
+              <elementProp name="../public/docs/PDFPRUEBA.pdf" elementType="HTTPFileArg">
+                <stringProp name="File.path">../public/docs/PDFPRUEBA.pdf</stringProp>
+                <stringProp name="File.paramname">certificacionLaboral</stringProp>
+                <stringProp name="File.mimetype">application/pdf</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="fechaIngreso" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${fechaIngreso}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">fechaIngreso</stringProp>
+              </elementProp>
+              <elementProp name="actividad" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${actividadDatosLaborales}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">actividad</stringProp>
+              </elementProp>
+              <elementProp name="nitAfiliacion" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${nitAfiliacion}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">nitAfiliacion</stringProp>
+              </elementProp>
+              <elementProp name="idPagaduriaSucursal" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${idPagaduria}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">idPagaduriaSucursal</stringProp>
+              </elementProp>
+              <elementProp name="idDocumento" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${idCartaLaboral}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">idDocumento</stringProp>
+              </elementProp>
+              <elementProp name="cargo" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${cargo}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">cargo</stringProp>
+              </elementProp>
+              <elementProp name="tipoPension" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${tipoPension}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">tipoPension</stringProp>
+              </elementProp>
+              <elementProp name="fechaTerminacion" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${fechaTerminacion}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">fechaTerminacion</stringProp>
+              </elementProp>
+              <elementProp name="numeroResolucion" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${numeroResolucion}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">numeroResolucion</stringProp>
+              </elementProp>
+              <elementProp name="telefonoTrabajo" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${telefonoTrabajo}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">telefonoTrabajo</stringProp>
+              </elementProp>
+              <elementProp name="exstensionTelefonoTrabajo" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${extensionTrabajo}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">exstensionTelefonoTrabajo</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/work-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar competidores" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}competitors</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString ();
+JSONArray competidor = new JSONArray(response_data);
+
+for(int i=0;i&lt;competidor.length();i++){
+   if(competidor.get(i).get(&quot;nombre&quot;).contains(&quot;${competidor}&quot;)){
+	   log.info(&quot;Id competidor: &quot;+competidor.get(i).get(&quot;id&quot;));
+	   vars.put(&quot;idCompetidor&quot;,competidor.get(i).get(&quot;id&quot;).toString());	   
+   }
+}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
+    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
+    &quot;idOficina&quot; : ${idOficina},&#xd;
+    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
+    &quot;tasa&quot;: ${tasa},&#xd;
+    &quot;plazo&quot;: ${plazo},&#xd;
+    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
+    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
+    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
+    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
+    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+    },&#xd;
+    &quot;carteras&quot;:[&#xd;
+        {&#xd;
+            &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+            &quot;monto&quot;: &quot;${montoCartera}&quot;,&#xd;
+            &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+            &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+            &quot;noObligacion&quot;: 1&#xd;
+        }&#xd;
+    ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar etapa excepciones" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}exception-stage/finalize/credits/${idCredito}</stringProp>
+          <stringProp name="HTTPSampler.method">PATCH</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar paquetes de seguro AP" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}seguroap/paquetes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString ();
+JSONObject Rest = new JSONObject(response_data);
+JSONArray paquetesSeguroAP = new JSONArray(Rest.get(&quot;planes&quot;));
+
+for(int i=0;i&lt;paquetesSeguroAP.length();i++){
+   if(paquetesSeguroAP.get(i).get(&quot;nombre&quot;).contains(&quot;${nombrePlan}&quot;)){
+	   log.info(&quot;Id plan Seguro AP: &quot;+paquetesSeguroAP.get(i).get(&quot;id&quot;));
+	   vars.put(&quot;idNombrePlan&quot;,paquetesSeguroAP.get(i).get(&quot;id&quot;).toString());	   
+   }
+}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar seguro AP" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;id_cliente&quot;: ${idCliente},&#xd;
+  &quot;cliente_es_tomador&quot;: false,&#xd;
+  &quot;id_paquete_seguro&quot;: ${idNombrePlan},&#xd;
+  &quot;id_usuario_crea&quot;: ${idAsesor},&#xd;
+  &quot;tomadorSeguroExterno&quot;: {&#xd;
+    &quot;documento&quot;: &quot;${identificacion}&quot;,&#xd;
+    &quot;tipo_documento&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
+    &quot;nombres_apellidos&quot;: ${nombresCliente},&#xd;
+    &quot;celular&quot;: &quot;${celular}&quot;,&#xd;
+    &quot;id_departamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+    &quot;id_ciudad&quot;: &quot;${idCiudad}&quot;,&#xd;
+    &quot;genero&quot;: &quot;${genero}&quot;,&#xd;
+    &quot;telefonoResidencia&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
+    &quot;email&quot;: ${email},&#xd;
+    &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+    &quot;direccionResidencia&quot;: &quot;${direccion}&quot;&#xd;
+  },&#xd;
+  &quot;beneficiariosSeguro&quot;: [&#xd;
+    {&#xd;
+      &quot;nombres_apellidos&quot;: &quot;${nombresApellidosBeneficiario}&quot;,&#xd;
+      &quot;porcentaje_asignado&quot;: ${porcentaje_asignado},&#xd;
+      &quot;parentesco&quot;: &quot;${parentescoAP}&quot;&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;nombres_apellidos&quot;: &quot;${nombresApellidosBeneficiarioDos}&quot;,&#xd;
+      &quot;porcentaje_asignado&quot;: ${porcentaje_asignadoDos},&#xd;
+      &quot;parentesco&quot;: &quot;${parentescoAPDos}&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}seguroap/seguro/${idCredito}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar referencias personales y familiares" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+    {&#xd;
+        &quot;idCredito&quot;: 159967,&#xd;
+        &quot;primerNombre&quot;: &quot;Augustu&quot;,&#xd;
+        &quot;segundoNombre&quot;: &quot;Pepe&quot;,&#xd;
+        &quot;primerApellido&quot;: &quot;Gomez&quot;,&#xd;
+        &quot;segundoAPellido&quot;: &quot;Perez&quot;,&#xd;
+        &quot;idTipo&quot;:&quot;CC&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;1235874&quot;,&#xd;
+        &quot;fechaExpedicion&quot;: &quot;01/02/1995&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;01/02/1965&quot;,&#xd;
+        &quot;lugarExpedicion&quot;: &quot;Bogotá&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;Pitalito&quot;,&#xd;
+        &quot;paisNacimiento&quot;: &quot;Colombia&quot;,&#xd;
+        &quot;actividadEconomica&quot;: &quot;SERVICIOS_AGRICOLAS&quot;,&#xd;
+        &quot;empresaLabora&quot;: &quot;Socios&quot;,&#xd;
+        &quot;cargo&quot;: &quot;Operador&quot;,&#xd;
+        &quot;direccionEmpresa&quot;: &quot;CAlle 12234&quot;,&#xd;
+        &quot;departamentoTrabajo&quot;: &quot;CO&gt;Cundinamarca&quot;,&#xd;
+        &quot;ciudadTrabajo&quot;:&quot;CO&gt;Cundinamarca&gt;Bogota&quot;,&#xd;
+        &quot;telefonoTrabajo&quot;: &quot;1245748&quot;,&#xd;
+        &quot;telefonoResidencia&quot;:&quot;8745545&quot;,&#xd;
+        &quot;extensionTrabajo&quot;: &quot;123&quot;,&#xd;
+        &quot;telefonoCelular&quot;:&quot;315478587&quot;,&#xd;
+        &quot;tipoReferencia&quot;: &quot;FAMILIAR&quot;,&#xd;
+        &quot;relacion&quot;: &quot;Padre&quot;,&#xd;
+        &quot;nacionalidad&quot;: &quot;Colombiano&quot;,&#xd;
+        &quot;email&quot;: &quot;pepegome@prueba.com&quot;&#xd;
+    }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}create-references</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
           <hashTree/>
         </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
