@@ -757,8 +757,7 @@ vars.put(&quot;calculoValorInteresesIniciales&quot;, calculosSimuladorExterno.ge
 vars.put(&quot;calculoPrimaAnticipadaSeguro&quot;, calculosSimuladorExterno.get(0).get(&quot;r_prima_anticipada_seguro&quot;).toString());
 vars.put(&quot;calculoRemanenteEstimado&quot;, calculosSimuladorExterno.get(0).get(&quot;r_remanente_estimado&quot;).toString());
 vars.put(&quot;calculoEstudioCreditoIva&quot;, calculosSimuladorExterno.get(0).get(&quot;r_estudio_credito_iva&quot;).toString());
-vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_fianza&quot;).toString());
-</stringProp>
+vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_fianza&quot;).toString());</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -842,7 +841,74 @@ if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
 	Failure=true;
 	FailureMessage=&quot;Response de la simulacion errada, no se genero id de simulacion&quot;;	
 	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-  }
+}
+
+int tolerancia = ${calculoCuotaCorriente} - simulacion.get(&quot;cuotaCorriente&quot;);
+
+if (tolerancia &lt; 0) {
+  tolerancia = tolerancia * -1;
+}
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
+} else {
+  Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoMontoSolicitar} - simulacion.get(&quot;montoTotalCredito&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;));
+} else {
+  Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoValorInteresesIniciales} - simulacion.get(&quot;valorInteresesIniciales&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;));
+} else {
+  Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoPrimaAnticipadaSeguro} - simulacion.get(&quot;primaAnticipadaSeguro&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
+} else {
+  Failure = true;
+  FailureMessage =&quot; no pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoRemanenteEstimado} - simulacion.get(&quot;remanenteEstimado&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
+} else {
+	Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoEstudioCreditoIva} - simulacion.get(&quot;estudioCreditoMasIVA&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
+} else {
+  Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoFianza} - simulacion.get(&quot;valorFianza&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
+} else {
+  Failure = true;
+  FailureMessage = &quot; no pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;);	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
 
 
 </stringProp>
@@ -850,6 +916,18 @@ if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
           </BeanShellAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString();
+JSONObject simulacion = new JSONObject(response_data);
+vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toString());
+</stringProp>
+          </BeanShellPostProcessor>
           <hashTree/>
           <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -887,18 +965,6 @@ if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.json.*;
-
-String response_data = prev.getResponseDataAsString ();
-JSONObject simulacion = new JSONObject(response_data);
-vars.put(&quot;idSimulacion&quot;,simulacion.get(&quot;idSimulacion&quot;).toString());	   
-</stringProp>
-          </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="false">
