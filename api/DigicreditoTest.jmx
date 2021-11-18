@@ -482,7 +482,7 @@
             </elementProp>
             <elementProp name="actividadEconomica" elementType="Argument">
               <stringProp name="Argument.name">actividadEconomica</stringProp>
-              <stringProp name="Argument.value">empleada</stringProp>
+              <stringProp name="Argument.value">Empleado</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="empresaTrabajo" elementType="Argument">
@@ -490,8 +490,8 @@
               <stringProp name="Argument.value">mederi</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="cargo" elementType="Argument">
-              <stringProp name="Argument.name">cargo</stringProp>
+            <elementProp name="cargoConyuge" elementType="Argument">
+              <stringProp name="Argument.name">cargoConyuge</stringProp>
               <stringProp name="Argument.value">enfermera</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -518,11 +518,6 @@
             <elementProp name="fechaIngreso" elementType="Argument">
               <stringProp name="Argument.name">fechaIngreso</stringProp>
               <stringProp name="Argument.value">2021-05-25</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="actividadDatosLaborales" elementType="Argument">
-              <stringProp name="Argument.name">actividadDatosLaborales</stringProp>
-              <stringProp name="Argument.value">PENSIONADO</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="nitAfiliacion" elementType="Argument">
@@ -708,6 +703,71 @@
             <elementProp name="representanteOrganizacion" elementType="Argument">
               <stringProp name="Argument.name">representanteOrganizacion</stringProp>
               <stringProp name="Argument.value">false</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="primerNombreRef" elementType="Argument">
+              <stringProp name="Argument.name">primerNombreRef</stringProp>
+              <stringProp name="Argument.value">Amparo</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="segundoNombreRef" elementType="Argument">
+              <stringProp name="Argument.name">segundoNombreRef</stringProp>
+              <stringProp name="Argument.value">Catalina</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="primerApellidoRef" elementType="Argument">
+              <stringProp name="Argument.name">primerApellidoRef</stringProp>
+              <stringProp name="Argument.value">Guzman</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="segundoApellidoRef" elementType="Argument">
+              <stringProp name="Argument.name">segundoApellidoRef</stringProp>
+              <stringProp name="Argument.value">Perilla</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identificacionRef" elementType="Argument">
+              <stringProp name="Argument.name">identificacionRef</stringProp>
+              <stringProp name="Argument.value">52741965</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="actividadEconomica" elementType="Argument">
+              <stringProp name="Argument.name">actividadEconomica</stringProp>
+              <stringProp name="Argument.value">Pensionado</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idActividadEconomicaRef" elementType="Argument">
+              <stringProp name="Argument.name">idActividadEconomicaRef</stringProp>
+              <stringProp name="Argument.value">SERVICIOS_ESTATALES</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombreBSV" elementType="Argument">
+              <stringProp name="Argument.name">nombreBSV</stringProp>
+              <stringProp name="Argument.value">Juan Perez Gomez</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="nombreBSV2" elementType="Argument">
+              <stringProp name="Argument.name">nombreBSV2</stringProp>
+              <stringProp name="Argument.value">Luis Perez Gomez</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identificacionBSV" elementType="Argument">
+              <stringProp name="Argument.name">identificacionBSV</stringProp>
+              <stringProp name="Argument.value">5412121</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identificacionBSV2" elementType="Argument">
+              <stringProp name="Argument.name">identificacionBSV2</stringProp>
+              <stringProp name="Argument.value">5412122</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="idActividadEconomica" elementType="Argument">
+              <stringProp name="Argument.name">idActividadEconomica</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="tokenFirma" elementType="Argument">
+              <stringProp name="Argument.name">tokenFirma</stringProp>
+              <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -3026,7 +3086,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
     &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
     &quot;actividadEconomica&quot;: &quot;${actividadEconomica}&quot;,&#xd;
     &quot;empresaTrabajo&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
-    &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+    &quot;cargo&quot;: &quot;${cargoConyuge}&quot;,&#xd;
     &quot;idDepartamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
     &quot;idCiudadTrabajo&quot;: &quot;${idCiudad}&quot;,&#xd;
     &quot;telefonoTrabajo&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
@@ -3213,6 +3273,102 @@ for(int i=0;i&lt;documento.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Buscar actividades económicas" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}actividades-economicas</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString ();
+JSONArray actividadEconomica = new JSONArray(response_data);
+
+for(int i=0;i&lt;actividadEconomica.length();i++){
+   if(actividadEconomica.get(i).get(&quot;nombre&quot;).equals(&quot;${actividadEconomicaRef}&quot;)){
+	   log.info(&quot;Id actividad economico: &quot;+actividadEconomica.get(i).get(&quot;id&quot;));
+	   vars.put(&quot;idActividadEconomica&quot;,actividadEconomica.get(i).get(&quot;id&quot;).toString());	   
+   }
+}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos laborales" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
@@ -3234,7 +3390,7 @@ for(int i=0;i&lt;documento.length();i++){
               </elementProp>
               <elementProp name="actividad" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${actividadDatosLaborales}</stringProp>
+                <stringProp name="Argument.value">${idActividadEconomica}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">actividad</stringProp>
@@ -3902,32 +4058,113 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">[&#xd;
     {&#xd;
-        &quot;idCredito&quot;: 159967,&#xd;
-        &quot;primerNombre&quot;: &quot;Augustu&quot;,&#xd;
-        &quot;segundoNombre&quot;: &quot;Pepe&quot;,&#xd;
-        &quot;primerApellido&quot;: &quot;Gomez&quot;,&#xd;
-        &quot;segundoAPellido&quot;: &quot;Perez&quot;,&#xd;
-        &quot;idTipo&quot;:&quot;CC&quot;,&#xd;
-        &quot;identificacion&quot;: &quot;1235874&quot;,&#xd;
-        &quot;fechaExpedicion&quot;: &quot;01/02/1995&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: &quot;01/02/1965&quot;,&#xd;
-        &quot;lugarExpedicion&quot;: &quot;Bogotá&quot;,&#xd;
-        &quot;lugarNacimiento&quot;: &quot;Pitalito&quot;,&#xd;
-        &quot;paisNacimiento&quot;: &quot;Colombia&quot;,&#xd;
-        &quot;actividadEconomica&quot;: &quot;SERVICIOS_AGRICOLAS&quot;,&#xd;
-        &quot;empresaLabora&quot;: &quot;Socios&quot;,&#xd;
-        &quot;cargo&quot;: &quot;Operador&quot;,&#xd;
-        &quot;direccionEmpresa&quot;: &quot;CAlle 12234&quot;,&#xd;
-        &quot;departamentoTrabajo&quot;: &quot;CO&gt;Cundinamarca&quot;,&#xd;
-        &quot;ciudadTrabajo&quot;:&quot;CO&gt;Cundinamarca&gt;Bogota&quot;,&#xd;
-        &quot;telefonoTrabajo&quot;: &quot;1245748&quot;,&#xd;
-        &quot;telefonoResidencia&quot;:&quot;8745545&quot;,&#xd;
-        &quot;extensionTrabajo&quot;: &quot;123&quot;,&#xd;
-        &quot;telefonoCelular&quot;:&quot;315478587&quot;,&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
+        &quot;segundoNombre&quot;: &quot;${segundoNombreRef}&quot;,&#xd;
+        &quot;primerApellido&quot;: &quot;${primerApellidoRef}&quot;,&#xd;
+        &quot;segundoAPellido&quot;: &quot;${segundoApellidoRef}&quot;,&#xd;
+        &quot;idTipo&quot;:&quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${__Random(40000000,99999999,)}&quot;,&#xd;
+        &quot;fechaExpedicion&quot;: &quot;${fechaExpedicionDocumento}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimientoCliente}&quot;,&#xd;
+        &quot;lugarExpedicion&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;paisNacimiento&quot;: &quot;${paisNacimiento}&quot;,&#xd;
+        &quot;actividadEconomica&quot;: &quot;${idActividadEconomicaRef}&quot;,&#xd;
+        &quot;empresaLabora&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
+        &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+        &quot;direccionEmpresa&quot;: &quot;${direccion}&quot;,&#xd;
+        &quot;departamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;ciudadTrabajo&quot;:&quot;${idCiudad}&quot;,&#xd;
+        &quot;telefonoTrabajo&quot;: &quot;${telefonoTrabajo}&quot;,&#xd;
+        &quot;telefonoResidencia&quot;:&quot;${numeroTelefonico}&quot;,&#xd;
+        &quot;extensionTrabajo&quot;: &quot;${extensionTrabajo}&quot;,&#xd;
+        &quot;telefonoCelular&quot;:&quot;${celular}&quot;,&#xd;
         &quot;tipoReferencia&quot;: &quot;FAMILIAR&quot;,&#xd;
         &quot;relacion&quot;: &quot;Padre&quot;,&#xd;
-        &quot;nacionalidad&quot;: &quot;Colombiano&quot;,&#xd;
-        &quot;email&quot;: &quot;pepegome@prueba.com&quot;&#xd;
+        &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
+        &quot;email&quot;: ${email}&#xd;
+    },{&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
+        &quot;segundoNombre&quot;: &quot;${segundoNombreRef}&quot;,&#xd;
+        &quot;primerApellido&quot;: &quot;${primerApellidoRef}&quot;,&#xd;
+        &quot;segundoAPellido&quot;: &quot;${segundoApellidoRef}&quot;,&#xd;
+        &quot;idTipo&quot;:&quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${__Random(40000000,99999999,)}&quot;,&#xd;
+        &quot;fechaExpedicion&quot;: &quot;${fechaExpedicionDocumento}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimientoCliente}&quot;,&#xd;
+        &quot;lugarExpedicion&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;paisNacimiento&quot;: &quot;${paisNacimiento}&quot;,&#xd;
+        &quot;actividadEconomica&quot;: &quot;${idActividadEconomicaRef}&quot;,&#xd;
+        &quot;empresaLabora&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
+        &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+        &quot;direccionEmpresa&quot;: &quot;${direccion}&quot;,&#xd;
+        &quot;departamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;ciudadTrabajo&quot;:&quot;${idCiudad}&quot;,&#xd;
+        &quot;telefonoTrabajo&quot;: &quot;${telefonoTrabajo}&quot;,&#xd;
+        &quot;telefonoResidencia&quot;:&quot;${numeroTelefonico}&quot;,&#xd;
+        &quot;extensionTrabajo&quot;: &quot;${extensionTrabajo}&quot;,&#xd;
+        &quot;telefonoCelular&quot;:&quot;${celular}&quot;,&#xd;
+        &quot;tipoReferencia&quot;: &quot;FAMILIAR&quot;,&#xd;
+        &quot;relacion&quot;: &quot;Tio&quot;,&#xd;
+        &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
+        &quot;email&quot;: ${email}&#xd;
+    },{&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
+        &quot;segundoNombre&quot;: &quot;${segundoNombreRef}&quot;,&#xd;
+        &quot;primerApellido&quot;: &quot;${primerApellidoRef}&quot;,&#xd;
+        &quot;segundoAPellido&quot;: &quot;${segundoApellidoRef}&quot;,&#xd;
+        &quot;idTipo&quot;:&quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${__Random(40000000,99999999,)}&quot;,&#xd;
+        &quot;fechaExpedicion&quot;: &quot;${fechaExpedicionDocumento}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimientoCliente}&quot;,&#xd;
+        &quot;lugarExpedicion&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;paisNacimiento&quot;: &quot;${paisNacimiento}&quot;,&#xd;
+        &quot;actividadEconomica&quot;: &quot;${idActividadEconomicaRef}&quot;,&#xd;
+        &quot;empresaLabora&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
+        &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+        &quot;direccionEmpresa&quot;: &quot;${direccion}&quot;,&#xd;
+        &quot;departamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;ciudadTrabajo&quot;:&quot;${idCiudad}&quot;,&#xd;
+        &quot;telefonoTrabajo&quot;: &quot;${telefonoTrabajo}&quot;,&#xd;
+        &quot;telefonoResidencia&quot;:&quot;${numeroTelefonico}&quot;,&#xd;
+        &quot;extensionTrabajo&quot;: &quot;${extensionTrabajo}&quot;,&#xd;
+        &quot;telefonoCelular&quot;:&quot;${celular}&quot;,&#xd;
+        &quot;tipoReferencia&quot;: &quot;PERSONAL&quot;,&#xd;
+        &quot;relacion&quot;: &quot;Amigo&quot;,&#xd;
+        &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
+        &quot;email&quot;: ${email}&#xd;
+    },{&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
+        &quot;segundoNombre&quot;: &quot;${segundoNombreRef}&quot;,&#xd;
+        &quot;primerApellido&quot;: &quot;${primerApellidoRef}&quot;,&#xd;
+        &quot;segundoAPellido&quot;: &quot;${segundoApellidoRef}&quot;,&#xd;
+        &quot;idTipo&quot;:&quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${__Random(40000000,99999999,)}&quot;,&#xd;
+        &quot;fechaExpedicion&quot;: &quot;${fechaExpedicionDocumento}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimientoCliente}&quot;,&#xd;
+        &quot;lugarExpedicion&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
+        &quot;paisNacimiento&quot;: &quot;${paisNacimiento}&quot;,&#xd;
+        &quot;actividadEconomica&quot;: &quot;${idActividadEconomicaRef}&quot;,&#xd;
+        &quot;empresaLabora&quot;: &quot;${empresaTrabajo}&quot;,&#xd;
+        &quot;cargo&quot;: &quot;${cargo}&quot;,&#xd;
+        &quot;direccionEmpresa&quot;: &quot;${direccion}&quot;,&#xd;
+        &quot;departamentoTrabajo&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;ciudadTrabajo&quot;:&quot;${idCiudad}&quot;,&#xd;
+        &quot;telefonoTrabajo&quot;: &quot;${telefonoTrabajo}&quot;,&#xd;
+        &quot;telefonoResidencia&quot;:&quot;${numeroTelefonico}&quot;,&#xd;
+        &quot;extensionTrabajo&quot;: &quot;${extensionTrabajo}&quot;,&#xd;
+        &quot;telefonoCelular&quot;:&quot;${celular}&quot;,&#xd;
+        &quot;tipoReferencia&quot;: &quot;PERSONAL&quot;,&#xd;
+        &quot;relacion&quot;: &quot;Vecino&quot;,&#xd;
+        &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
+        &quot;email&quot;: ${email}&#xd;
     }&#xd;
 ]</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -4014,6 +4251,118 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar beneficiarios de seguro de vida" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+    {&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;nombre&quot;: &quot;${nombreBSV}&quot;,&#xd;
+        &quot;tipoDocumento&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${identificacionBSV}&quot;,&#xd;
+        &quot;celular&quot;: &quot;${celular}&quot;,&#xd;
+        &quot;idDepartamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;idCiudad&quot;: &quot;${idCiudad}&quot;,&#xd;
+        &quot;porcentaje&quot;: ${porcentaje_asignado}&#xd;
+    },&#xd;
+    {&#xd;
+        &quot;idCredito&quot;: ${idCredito},&#xd;
+        &quot;nombre&quot;: &quot;${nombreBSV2}&quot;,&#xd;
+        &quot;tipoDocumento&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
+        &quot;identificacion&quot;: &quot;${identificacionBSV2}&quot;,&#xd;
+        &quot;celular&quot;: &quot;${celular}&quot;,&#xd;
+        &quot;idDepartamento&quot;: &quot;${idDepartamento}&quot;,&#xd;
+        &quot;idCiudad&quot;: &quot;${idCiudad}&quot;,&#xd;
+        &quot;porcentaje&quot;: ${porcentaje_asignadoDos}&#xd;
+    }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}create-beneficiaries</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar operaciones internacionales" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -4023,17 +4372,17 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
                 <stringProp name="Argument.value">{&#xd;
     &quot;idCredito&quot;: ${idCredito},&#xd;
     &quot;tieneTransaccionExtranjera&quot;: ${tieneTransaccionExtranjera},&#xd;
-    &quot;transaccionExtranjera&quot;: ${transaccionExtranjera},&#xd;
-    &quot;otraCual&quot;: ${otraCual},&#xd;
+    &quot;transaccionExtranjera&quot;: &quot;${transaccionExtranjera}&quot;,&#xd;
+    &quot;otraCual&quot;: &quot;${otraCual}&quot;,&#xd;
     &quot;productoBancario&quot;: {&#xd;
         &quot;tieneProducto&quot;: ${tieneProducto},&#xd;
-        &quot;banco&quot;: ${operacionIntlBanco},&#xd;
-        &quot;pais&quot;: ${operacionIntlPais},&#xd;
-        &quot;ciudad&quot;: ${operacionIntlCiudad},&#xd;
-        &quot;tipoProducto&quot;: ${operacionIntlTipoProducto},&#xd;
-        &quot;numeroProducto&quot;: ${operacionIntlNumProducto},&#xd;
+        &quot;banco&quot;: &quot;${operacionIntlBanco}&quot;,&#xd;
+        &quot;pais&quot;: &quot;${operacionIntlPais}&quot;,&#xd;
+        &quot;ciudad&quot;: &quot;${operacionIntlCiudad}&quot;,&#xd;
+        &quot;tipoProducto&quot;: &quot;${operacionIntlTipoProducto}&quot;,&#xd;
+        &quot;numeroProducto&quot;: &quot;${operacionIntlNumProducto}&quot;,&#xd;
         &quot;monto&quot;: ${operacionIntlMonto},&#xd;
-        &quot;moneda&quot;: ${operacionIntlMoneda}&#xd;
+        &quot;moneda&quot;: &quot;${operacionIntlMoneda}&quot;&#xd;
     }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -4128,7 +4477,7 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
     &quot;funcionarioPublico&quot;: ${funcionarioPublico},&#xd;
     &quot;manejoRecursosPublicos&quot;: ${manejoRecursosPublicos},&#xd;
     &quot;expuestoPoliticamente&quot;: ${expuestoPoliticamente},&#xd;
-    &quot;fechaVinculacion&quot;: ${fechaVinculacion},&#xd;
+    &quot;fechaVinculacion&quot;: &quot;${fechaVinculacion}&quot;,&#xd;
     &quot;funcionarioPublicoEntendimiento&quot; : ${funcionarioPublicoEntendimiento},&#xd;
     &quot;representanteOrganizacion&quot;: ${representanteOrganizacion}&#xd;
 }</stringProp>
@@ -4170,6 +4519,205 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
 boolean Estado = prev.isResponseCodeOK();
 Failure = !Estado;
 FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot;;</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar OTP para firma de documentos" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idCliente&quot;: ${idCliente},&#xd;
+    &quot;idUsuario&quot;: ${idUsuario}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}creditos/${idCredito}/firma-documentos/notificacion-otp</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+String response_data = prev.getResponseDataAsString ();
+JSONObject firma= new JSONObject(response_data);
+
+if(firma==null || firma.get(&quot;token&quot;)==null){
+	Failure=true;
+	FailureMessage=&quot;Response de la simulacion errada, no se genero token&quot;;	
+	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+  }
+  
+log.info(&quot;Token firma : &quot;+ firma.get(&quot;token&quot;));
+vars.put(&quot;tokenFirma&quot;,firma.get(&quot;token&quot;).toString());	 
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar firma de documentos" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idCliente&quot;: ${idCliente},&#xd;
+    &quot;token&quot;: &quot;${tokenFirma}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}creditos/${idCredito}/firma-documentos/aceptar</stringProp>
+          <stringProp name="HTTPSampler.method">PATCH</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+
+</stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
