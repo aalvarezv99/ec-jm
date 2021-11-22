@@ -227,7 +227,7 @@
             </elementProp>
             <elementProp name="email" elementType="Argument">
               <stringProp name="Argument.name">email</stringProp>
-              <stringProp name="Argument.value">&quot;daabogadog@mail.com&quot;</stringProp>
+              <stringProp name="Argument.value">prueba123@gmail.com</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="tokenOTP" elementType="Argument">
@@ -478,11 +478,6 @@
             <elementProp name="identificacionConyuge" elementType="Argument">
               <stringProp name="Argument.name">identificacionConyuge</stringProp>
               <stringProp name="Argument.value">52852963</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="actividadEconomica" elementType="Argument">
-              <stringProp name="Argument.name">actividadEconomica</stringProp>
-              <stringProp name="Argument.value">Empleado</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="empresaTrabajo" elementType="Argument">
@@ -1245,7 +1240,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
         &quot;identificacion&quot;: ${identificacion},&#xd;
         &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
         &quot;celular&quot;: ${celular},&#xd;
-        &quot;email&quot;: ${email}&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
     },&#xd;
     &quot;carteras&quot;: [&#xd;
         {&#xd;
@@ -3263,7 +3258,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
     &quot;apellido2&quot;: &quot;${apellido2}&quot;,&#xd;
     &quot;idTipo&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
     &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-    &quot;email&quot;: ${email},&#xd;
+    &quot;email&quot;: &quot;${email}&quot;,&#xd;
     &quot;telefonoResidencia&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
     &quot;lugarNacimiento&quot;: &quot;${lugarNacimiento}&quot;,&#xd;
     &quot;actividadEconomica&quot;: &quot;${actividadEconomica}&quot;,&#xd;
@@ -3543,7 +3538,7 @@ String response_data = prev.getResponseDataAsString ();
 JSONArray actividadEconomica = new JSONArray(response_data);
 
 for(int i=0;i&lt;actividadEconomica.length();i++){
-   if(actividadEconomica.get(i).get(&quot;nombre&quot;).equals(&quot;${actividadEconomicaRef}&quot;)){
+   if(actividadEconomica.get(i).get(&quot;nombre&quot;).equals(&quot;${actividadEconomica}&quot;)){
 	   log.info(&quot;Id actividad economico: &quot;+actividadEconomica.get(i).get(&quot;id&quot;));
 	   vars.put(&quot;idActividadEconomica&quot;,actividadEconomica.get(i).get(&quot;id&quot;).toString());	   
    }
@@ -4130,7 +4125,7 @@ for(int i=0;i&lt;paquetesSeguroAP.length();i++){
     &quot;id_ciudad&quot;: &quot;${idCiudad}&quot;,&#xd;
     &quot;genero&quot;: &quot;${genero}&quot;,&#xd;
     &quot;telefonoResidencia&quot;: &quot;${numeroTelefonico}&quot;,&#xd;
-    &quot;email&quot;: ${email},&#xd;
+    &quot;email&quot;: &quot;${email}&quot;,&#xd;
     &quot;fechaNacimiento&quot;: &quot;${fechaNacimientoSap}&quot;,&#xd;
     &quot;direccionResidencia&quot;: &quot;${direccion}&quot;&#xd;
   },&#xd;
@@ -4265,7 +4260,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         &quot;tipoReferencia&quot;: &quot;FAMILIAR&quot;,&#xd;
         &quot;relacion&quot;: &quot;Padre&quot;,&#xd;
         &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
-        &quot;email&quot;: ${email}&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
     },{&#xd;
         &quot;idCredito&quot;: ${idCredito},&#xd;
         &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
@@ -4292,7 +4287,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         &quot;tipoReferencia&quot;: &quot;FAMILIAR&quot;,&#xd;
         &quot;relacion&quot;: &quot;Tio&quot;,&#xd;
         &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
-        &quot;email&quot;: ${email}&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
     },{&#xd;
         &quot;idCredito&quot;: ${idCredito},&#xd;
         &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
@@ -4319,7 +4314,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         &quot;tipoReferencia&quot;: &quot;PERSONAL&quot;,&#xd;
         &quot;relacion&quot;: &quot;Amigo&quot;,&#xd;
         &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
-        &quot;email&quot;: ${email}&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
     },{&#xd;
         &quot;idCredito&quot;: ${idCredito},&#xd;
         &quot;primerNombre&quot;: &quot;${primerNombreRef}&quot;,&#xd;
@@ -4346,7 +4341,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         &quot;tipoReferencia&quot;: &quot;PERSONAL&quot;,&#xd;
         &quot;relacion&quot;: &quot;Vecino&quot;,&#xd;
         &quot;nacionalidad&quot;: &quot;${nacionalidad}&quot;,&#xd;
-        &quot;email&quot;: ${email}&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
     }&#xd;
 ]</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
