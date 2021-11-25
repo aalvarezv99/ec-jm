@@ -1197,22 +1197,19 @@ for(int i=0;i&lt;lineaCredito.length();i++){
    }
 }
 
-log.info(&quot; ------------------- antes de sumar los montos de las carteras-------------- &quot;);
-
-if(&quot;${idLineaCredito}&quot; == &quot;1&quot; || &quot;${idLineaCredito}&quot; == &quot;3&quot;) {
-	log.info(&quot; ------------------- entró al if -------------- &quot;);
+if(vars.get(&quot;idLineaCredito&quot;) == &quot;1&quot; || vars.get(&quot;idLineaCredito&quot;) == &quot;3&quot;) {
 	vars.put(&quot;montoCarteras&quot;, 0);
 	vars.put(&quot;sumaMontosCarteras&quot;, 0);
 } else {
-		log.info(&quot; ------------------- entró al else -------------- &quot;);
-	vars.put(&quot;sumaMontosCarteras&quot;,${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)});
+	int cartera =${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)};
+	vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());
 }</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontoCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
+          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -3216,7 +3213,7 @@ if(data !=&quot;&quot;){
         </HTTPSamplerProxy>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">50000</stringProp>
+            <stringProp name="ConstantTimer.delay">70000</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
