@@ -82,7 +82,7 @@
             </elementProp>
             <elementProp name="nombreLineaCredito" elementType="Argument">
               <stringProp name="Argument.name">nombreLineaCredito</stringProp>
-              <stringProp name="Argument.value">Retanqueo libre inversión</stringProp>
+              <stringProp name="Argument.value">Compra de cartera + saneamiento</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idLineaCredito" elementType="Argument">
@@ -132,12 +132,12 @@
             </elementProp>
             <elementProp name="nombresCliente" elementType="Argument">
               <stringProp name="Argument.name">nombresCliente</stringProp>
-              <stringProp name="Argument.value">&quot;OSCAR HERNANDEZ MARIN&quot;</stringProp>
+              <stringProp name="Argument.value">&quot;ALEYDA RODRIGUEZ GONZALEZ&quot;</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="primerNombre" elementType="Argument">
               <stringProp name="Argument.name">primerNombre</stringProp>
-              <stringProp name="Argument.value">OSCAR</stringProp>
+              <stringProp name="Argument.value">ALEYDA</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="segundoNombre" elementType="Argument">
@@ -147,32 +147,32 @@
             </elementProp>
             <elementProp name="primerApellido" elementType="Argument">
               <stringProp name="Argument.name">primerApellido</stringProp>
-              <stringProp name="Argument.value">HERNANDEZ</stringProp>
+              <stringProp name="Argument.value">RODRIGUEZ</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="segundoApellido" elementType="Argument">
               <stringProp name="Argument.name">segundoApellido</stringProp>
-              <stringProp name="Argument.value">MARIN</stringProp>
+              <stringProp name="Argument.value">GONZALEZ</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="identificacion" elementType="Argument">
               <stringProp name="Argument.name">identificacion</stringProp>
-              <stringProp name="Argument.value">10092369</stringProp>
+              <stringProp name="Argument.value">52912399</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="fechaNacimiento" elementType="Argument">
               <stringProp name="Argument.name">fechaNacimiento</stringProp>
-              <stringProp name="Argument.value">&quot;1955-02-11&quot;</stringProp>
+              <stringProp name="Argument.value">&quot;1976-05-28&quot;</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="fechaNacimientoCliente" elementType="Argument">
               <stringProp name="Argument.name">fechaNacimientoCliente</stringProp>
-              <stringProp name="Argument.value">1955-02-11</stringProp>
+              <stringProp name="Argument.value">1976-05-28</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="montoCarteras" elementType="Argument">
               <stringProp name="Argument.name">montoCarteras</stringProp>
-              <stringProp name="Argument.value">0</stringProp>
+              <stringProp name="Argument.value">200000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idSimulacion" elementType="Argument">
@@ -222,12 +222,12 @@
             </elementProp>
             <elementProp name="celular" elementType="Argument">
               <stringProp name="Argument.name">celular</stringProp>
-              <stringProp name="Argument.value">3228483385</stringProp>
+              <stringProp name="Argument.value">3183903022</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="email" elementType="Argument">
               <stringProp name="Argument.name">email</stringProp>
-              <stringProp name="Argument.value">prueba0248@gmail.com</stringProp>
+              <stringProp name="Argument.value">aalvarez@excelcredit.co</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="tokenOTP" elementType="Argument">
@@ -617,7 +617,7 @@
             </elementProp>
             <elementProp name="tieneTransaccionExtranjera" elementType="Argument">
               <stringProp name="Argument.name">tieneTransaccionExtranjera</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="transaccionExtranjera" elementType="Argument">
@@ -627,7 +627,7 @@
             </elementProp>
             <elementProp name="tieneProducto" elementType="Argument">
               <stringProp name="Argument.name">tieneProducto</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="otraCual" elementType="Argument">
@@ -672,7 +672,7 @@
             </elementProp>
             <elementProp name="funcionarioPublico" elementType="Argument">
               <stringProp name="Argument.name">funcionarioPublico</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="manejoRecursosPublicos" elementType="Argument">
@@ -682,7 +682,7 @@
             </elementProp>
             <elementProp name="expuestoPoliticamente" elementType="Argument">
               <stringProp name="Argument.name">expuestoPoliticamente</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="fechaVinculacion" elementType="Argument">
@@ -692,7 +692,7 @@
             </elementProp>
             <elementProp name="funcionarioPublicoEntendimiento" elementType="Argument">
               <stringProp name="Argument.name">funcionarioPublicoEntendimiento</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="representanteOrganizacion" elementType="Argument">
@@ -818,6 +818,16 @@
             <elementProp name="idCreditoPadre" elementType="Argument">
               <stringProp name="Argument.name">idCreditoPadre</stringProp>
               <stringProp name="Argument.value">134950</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="variableMontoCartera" elementType="Argument">
+              <stringProp name="Argument.name">variableMontoCartera</stringProp>
+              <stringProp name="Argument.value">50000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sumaMontosCarteras" elementType="Argument">
+              <stringProp name="Argument.name">sumaMontosCarteras</stringProp>
+              <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -1185,13 +1195,24 @@ for(int i=0;i&lt;lineaCredito.length();i++){
 	   log.info(&quot;Id linea Credito: &quot;+lineaCredito.get(i).get(&quot;idBackend&quot;));
 	   vars.put(&quot;idLineaCredito&quot;,lineaCredito.get(i).get(&quot;idBackend&quot;).toString());	   
    }
+}
+
+log.info(&quot; ------------------- antes de sumar los montos de las carteras-------------- &quot;);
+
+if(&quot;${idLineaCredito}&quot; == &quot;1&quot; || &quot;${idLineaCredito}&quot; == &quot;3&quot;) {
+	log.info(&quot; ------------------- entró al if -------------- &quot;);
+	vars.put(&quot;montoCarteras&quot;, 0);
+	vars.put(&quot;sumaMontosCarteras&quot;, 0);
+} else {
+		log.info(&quot; ------------------- entró al else -------------- &quot;);
+	vars.put(&quot;sumaMontosCarteras&quot;,${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)});
 }</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request simulador externo" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
+          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontoCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -1219,6 +1240,12 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1420,7 +1447,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion con cartera" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion con cartera" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1450,7 +1477,10 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
     },&#xd;
     &quot;carteras&quot;: [&#xd;
         {&#xd;
-            &quot;monto&quot;: ${montoCarteras}&#xd;
+          &quot;monto&quot;: ${montoCarteras}&#xd;
+        },&#xd;
+        {&#xd;
+        	&quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)}&#xd;
         }&#xd;
     ]&#xd;
 }</stringProp>
@@ -1487,6 +1517,207 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </HeaderManager>
           <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+String response_data = prev.getResponseDataAsString ();
+JSONObject simulacion= new JSONObject(response_data);
+
+if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
+	Failure=true;
+	FailureMessage=&quot;Response de la simulacion errada, no se genero id de simulacion&quot;;	
+	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+int tolerancia = ${calculoCuotaCorriente} - simulacion.get(&quot;cuotaCorriente&quot;);
+
+if (tolerancia &lt; 0) {
+  tolerancia = tolerancia * -1;
+}
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
+  Failure = true;	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoMontoSolicitar} - simulacion.get(&quot;montoTotalCredito&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoValorInteresesIniciales} - simulacion.get(&quot;valorInteresesIniciales&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;));
+  Failure = true;	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoPrimaAnticipadaSeguro} - simulacion.get(&quot;primaAnticipadaSeguro&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoRemanenteEstimado} - simulacion.get(&quot;remanenteEstimado&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
+	Failure = true;	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoEstudioCreditoIva} - simulacion.get(&quot;estudioCreditoMasIVA&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
+  Failure = true;	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoFianza} - simulacion.get(&quot;valorFianza&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
+} else {
+	log.info(&quot; no pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
+  Failure = true;	
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.*;
+
+String response_data = prev.getResponseDataAsString();
+JSONObject simulacion = new JSONObject(response_data);
+vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toString());
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
+    &quot;idAsesor&quot; : ${idAsesor},&#xd;
+    &quot;idOficina&quot; : ${idOficina},&#xd;
+    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
+    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
+    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
+    &quot;tasa&quot;: ${tasa},&#xd;
+    &quot;plazo&quot;: ${plazo},&#xd;
+    &quot;monto&quot;: ${monto},&#xd;
+    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
+    &quot;ingresos&quot;: ${ingresos},&#xd;
+    &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
+    &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;nombres&quot;: ${nombresCliente},&#xd;
+        &quot;tipoIdentificacion&quot;: &quot;CC&quot;,&#xd;
+        &quot;identificacion&quot;: ${identificacion},&#xd;
+        &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+        &quot;celular&quot;: ${celular},&#xd;
+        &quot;email&quot;: &quot;${email}&quot;&#xd;
+    }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}simulacion</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
             <stringProp name="BeanShellAssertion.query">import org.json.*;
 
 boolean Estado=prev.isResponseCodeOK();
@@ -1626,7 +1857,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1653,7 +1884,15 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
         &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
         &quot;celular&quot;: ${celular},&#xd;
         &quot;email&quot;: &quot;${email}&quot;&#xd;
-    }&#xd;
+    },&#xd;
+    &quot;carteras&quot;: [&#xd;
+        {&#xd;
+          &quot;monto&quot;: ${montoCarteras}&#xd;
+        },&#xd;
+        {&#xd;
+        	&quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)}&#xd;
+        }&#xd;
+    ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -4214,7 +4453,7 @@ for(int i=0;i&lt;competidor.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4237,6 +4476,130 @@ for(int i=0;i&lt;competidor.length();i++){
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
         &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
     }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
+    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
+    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
+    &quot;idOficina&quot; : ${idOficina},&#xd;
+    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
+    &quot;tasa&quot;: ${tasa},&#xd;
+    &quot;plazo&quot;: ${plazo},&#xd;
+    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
+    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
+    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
+    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
+    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+    },&#xd;
+    &quot;carteras&quot;: [&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${montoCarteras},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      }&#xd;
+    ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -4429,7 +4792,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación con carteras" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación con carteras" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4451,14 +4814,21 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
         &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
     },&#xd;
-    &quot;carteras&quot;:[&#xd;
-        {&#xd;
-            &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-            &quot;monto&quot;: &quot;${montoCartera}&quot;,&#xd;
-            &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
-            &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
-            &quot;noObligacion&quot;: 1&#xd;
-        }&#xd;
+    &quot;carteras&quot;: [&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${montoCarteras},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      }&#xd;
     ]&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
