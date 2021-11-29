@@ -82,7 +82,7 @@
             </elementProp>
             <elementProp name="nombreLineaCredito" elementType="Argument">
               <stringProp name="Argument.name">nombreLineaCredito</stringProp>
-              <stringProp name="Argument.value">Compra de cartera + saneamiento</stringProp>
+              <stringProp name="Argument.value">Retanqueo compra de cartera</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idLineaCredito" elementType="Argument">
@@ -132,12 +132,12 @@
             </elementProp>
             <elementProp name="nombresCliente" elementType="Argument">
               <stringProp name="Argument.name">nombresCliente</stringProp>
-              <stringProp name="Argument.value">&quot;ALEYDA RODRIGUEZ GONZALEZ&quot;</stringProp>
+              <stringProp name="Argument.value">&quot;OSCAR HERNANDEZ MARIN&quot;</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="primerNombre" elementType="Argument">
               <stringProp name="Argument.name">primerNombre</stringProp>
-              <stringProp name="Argument.value">ALEYDA</stringProp>
+              <stringProp name="Argument.value">OSCAR</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="segundoNombre" elementType="Argument">
@@ -147,17 +147,17 @@
             </elementProp>
             <elementProp name="primerApellido" elementType="Argument">
               <stringProp name="Argument.name">primerApellido</stringProp>
-              <stringProp name="Argument.value">RODRIGUEZ</stringProp>
+              <stringProp name="Argument.value">HERNANDEZ</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="segundoApellido" elementType="Argument">
               <stringProp name="Argument.name">segundoApellido</stringProp>
-              <stringProp name="Argument.value">GONZALEZ</stringProp>
+              <stringProp name="Argument.value">MARIN</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="identificacion" elementType="Argument">
               <stringProp name="Argument.name">identificacion</stringProp>
-              <stringProp name="Argument.value">52912399</stringProp>
+              <stringProp name="Argument.value">10092369</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="fechaNacimiento" elementType="Argument">
@@ -1438,7 +1438,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion con cartera" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion con cartera" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1848,7 +1848,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4552,7 +4552,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4783,7 +4783,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación con carteras" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación con carteras" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
