@@ -82,7 +82,7 @@
             </elementProp>
             <elementProp name="nombreLineaCredito" elementType="Argument">
               <stringProp name="Argument.name">nombreLineaCredito</stringProp>
-              <stringProp name="Argument.value">Retanqueo compra de cartera</stringProp>
+              <stringProp name="Argument.value">Retanqueo libre inversión</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idLineaCredito" elementType="Argument">
@@ -830,6 +830,81 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="calculosSimuladorInternoRetanqueo" elementType="Argument">
+              <stringProp name="Argument.name">calculosSimuladorInternoRetanqueo</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="creditoPadre" elementType="Argument">
+              <stringProp name="Argument.name">creditoPadre</stringProp>
+              <stringProp name="Argument.value">68003</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="tipoCalculoRetanqueo" elementType="Argument">
+              <stringProp name="Argument.name">tipoCalculoRetanqueo</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoPrimaAnticipadaSeguroRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoPrimaAnticipadaSeguroRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoCuotaCorrienteRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoCuotaCorrienteRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoGmf41000Ret" elementType="Argument">
+              <stringProp name="Argument.name">calculoGmf41000Ret</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoPrimaNoDevengadaRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoPrimaNoDevengadaRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoPrimaNetaRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoPrimaNetaRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoResultFianzaRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoResultFianzaRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoResultEstudioCreditoRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoResultEstudioCreditoRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoRemaneteEstimadoRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoRemaneteEstimadoRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="calculoSaldoAlDiaRet" elementType="Argument">
+              <stringProp name="Argument.name">calculoSaldoAlDiaRet</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="montoSimulacionRetanqueo" elementType="Argument">
+              <stringProp name="Argument.name">montoSimulacionRetanqueo</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="responseSaveSimulacionRetanqueo" elementType="Argument">
+              <stringProp name="Argument.name">responseSaveSimulacionRetanqueo</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="saldoAlDia" elementType="Argument">
+              <stringProp name="Argument.name">saldoAlDia</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -1197,9 +1272,9 @@ for(int i=0;i&lt;lineaCredito.length();i++){
    }
 }
 
-if(vars.get(&quot;idLineaCredito&quot;) == &quot;1&quot; || vars.get(&quot;idLineaCredito&quot;) == &quot;3&quot;) {
-	vars.put(&quot;montoCarteras&quot;, 0);
-	vars.put(&quot;sumaMontosCarteras&quot;, 0);
+if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quot;idLineaCredito&quot;).contains(&quot;3&quot;)) {
+	vars.put(&quot;montoCarteras&quot;, &quot;0&quot;);
+	vars.put(&quot;sumaMontosCarteras&quot;, &quot;0&quot;);
 } else {
 	int cartera =${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)};
 	vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());
@@ -1207,7 +1282,7 @@ if(vars.get(&quot;idLineaCredito&quot;) == &quot;1&quot; || vars.get(&quot;idLin
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1507,7 +1582,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
             <stringProp name="BeanShellAssertion.query">import org.json.*;
 
 boolean Estado=prev.isResponseCodeOK();
@@ -1647,7 +1722,29 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="true">
+          <stringProp name="dataSource">postgres</stringProp>
+          <stringProp name="query">select round(saldo_al_dia) as saldo_al_dia from saldo_al_dia sad where id_credito = ${idCreditoPadre};</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="resultVariable">calculoSaldoAlDiaRet</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">Object saldoAlDia = vars.getObject(&quot;calculoSaldoAlDiaRet&quot;);
+vars.put(&quot;saldoAlDia&quot;, saldoAlDia.get(0).get(&quot;saldo_al_dia&quot;).toString());</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1708,91 +1805,10 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
 Failure=!Estado;
-FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
-
-String response_data = prev.getResponseDataAsString ();
-JSONObject simulacion= new JSONObject(response_data);
-
-if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
-	Failure=true;
-	FailureMessage=&quot;Response de la simulacion errada, no se genero id de simulacion&quot;;	
-	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-int tolerancia = ${calculoCuotaCorriente} - simulacion.get(&quot;cuotaCorriente&quot;);
-
-if (tolerancia &lt; 0) {
-  tolerancia = tolerancia * -1;
-}
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoMontoSolicitar} - simulacion.get(&quot;montoTotalCredito&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoValorInteresesIniciales} - simulacion.get(&quot;valorInteresesIniciales&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoPrimaAnticipadaSeguro} - simulacion.get(&quot;primaAnticipadaSeguro&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
-} else {
-  Failure = true;
-  FailureMessage =&quot; no pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoRemanenteEstimado} - simulacion.get(&quot;remanenteEstimado&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
-} else {
-	Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoEstudioCreditoIva} - simulacion.get(&quot;estudioCreditoMasIVA&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoFianza} - simulacion.get(&quot;valorFianza&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-
-</stringProp>
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;</stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
@@ -1807,7 +1823,8 @@ if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
 String response_data = prev.getResponseDataAsString();
 JSONObject simulacion = new JSONObject(response_data);
 vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toString());
-</stringProp>
+vars.put(&quot;montoSimulacionRetanqueo&quot;, simulacion.get(&quot;montoTotalCredito&quot;).toString());
+vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
           <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
@@ -1848,7 +1865,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1863,7 +1880,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
     &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
     &quot;tasa&quot;: ${tasa},&#xd;
     &quot;plazo&quot;: ${plazo},&#xd;
-    &quot;monto&quot;: ${monto},&#xd;
+    &quot;monto&quot;: ${__intSum(${monto},${saldoAlDia},)},&#xd;
     &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
     &quot;ingresos&quot;: ${ingresos},&#xd;
     &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
@@ -1917,91 +1934,10 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">boolean Estado=prev.isResponseCodeOK();
 Failure=!Estado;
-FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
-
-String response_data = prev.getResponseDataAsString ();
-JSONObject simulacion= new JSONObject(response_data);
-
-if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
-	Failure=true;
-	FailureMessage=&quot;Response de la simulacion errada, no se genero id de simulacion&quot;;	
-	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-int tolerancia = ${calculoCuotaCorriente} - simulacion.get(&quot;cuotaCorriente&quot;);
-
-if (tolerancia &lt; 0) {
-  tolerancia = tolerancia * -1;
-}
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorriente} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoMontoSolicitar} - simulacion.get(&quot;montoTotalCredito&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del monto a solicitar - Valor a &quot; + ${calculoMontoSolicitar} + &quot; Valor b &quot; + simulacion.get(&quot;montoTotalCredito&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoValorInteresesIniciales} - simulacion.get(&quot;valorInteresesIniciales&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia de intereses iniciales - Valor a &quot; + ${calculoValorInteresesIniciales} + &quot; Valor b &quot; + simulacion.get(&quot;valorInteresesIniciales&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoPrimaAnticipadaSeguro} - simulacion.get(&quot;primaAnticipadaSeguro&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
-} else {
-  Failure = true;
-  FailureMessage =&quot; no pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguro} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoRemanenteEstimado} - simulacion.get(&quot;remanenteEstimado&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
-} else {
-	Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemanenteEstimado} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoEstudioCreditoIva} - simulacion.get(&quot;estudioCreditoMasIVA&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del estudio de credito iva - Valor a &quot; + ${calculoEstudioCreditoIva} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-tolerancia = ${calculoFianza} - simulacion.get(&quot;valorFianza&quot;);
-if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
-  log.info(&quot; pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
-} else {
-  Failure = true;
-  FailureMessage = &quot; no pasó la tolerancia del valor de la fianza - Valor a &quot; + ${calculoFianza} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;);	
-  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-}
-
-
-</stringProp>
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;</stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
@@ -2016,7 +1952,8 @@ if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
 String response_data = prev.getResponseDataAsString();
 JSONObject simulacion = new JSONObject(response_data);
 vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toString());
-</stringProp>
+vars.put(&quot;montoSimulacionRetanqueo&quot;, simulacion.get(&quot;montoTotalCredito&quot;).toString());
+vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
           <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
@@ -2055,6 +1992,110 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="true">
+          <stringProp name="dataSource">postgres</stringProp>
+          <stringProp name="query">select * from public.calculos_simulador_interno_retanqueo_adp (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="resultVariable">calculosSimuladorInternoRetanqueo</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">Object calculos = vars.getObject(&quot;calculosSimuladorInternoRetanqueo&quot;);
+vars.put(&quot;tipoCalculoRetanqueo&quot;, calculos.get(0).get(&quot;tipocalculos&quot;).toString());
+vars.put(&quot;calculoPrimaAnticipadaSeguroRet&quot;, calculos.get(0).get(&quot;calculoprimaanticipadaseguro&quot;).toString());
+vars.put(&quot;calculoCuotaCorrienteRet&quot;, calculos.get(0).get(&quot;calculocuotacorriente&quot;).toString());
+vars.put(&quot;calculoGmf41000Ret&quot;, calculos.get(0).get(&quot;resultgmf41000&quot;).toString());
+vars.put(&quot;calculoPrimaNoDevengadaRet&quot;, calculos.get(0).get(&quot;calculoprimanodevengada&quot;).toString());
+vars.put(&quot;calculoPrimaNetaRet&quot;, calculos.get(0).get(&quot;calculoprimaneta&quot;).toString());
+vars.put(&quot;calculoResultFianzaRet&quot;, calculos.get(0).get(&quot;resultfianza&quot;).toString());
+vars.put(&quot;calculoResultEstudioCreditoRet&quot;, calculos.get(0).get(&quot;resultestudiocredito&quot;).toString());
+vars.put(&quot;calculoSaldoAldiaRet&quot;, calculos.get(0).get(&quot;saldoaldia&quot;).toString());
+vars.put(&quot;calculoRemaneteEstimadoRet&quot;, calculos.get(0).get(&quot;calculoremanenteestimado&quot;).toString());</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion calculos retanqueo" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+JSONObject simulacion = new JSONObject(vars.get(&quot;responseSaveSimulacionRetanqueo&quot;));
+
+if(simulacion==null || simulacion.get(&quot;idSimulacion&quot;)==null){
+	Failure=true;
+	FailureMessage=&quot;Response de la simulacion errada, no se genero id de simulacion&quot;;	
+	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+int tolerancia = 0;
+
+tolerancia = ${calculoPrimaAnticipadaSeguroRet} - simulacion.get(&quot;primaAnticipadaSeguro&quot;);
+
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+	  log.info(&quot; pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguroRet} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
+} else {
+log.info(&quot; no pasó la tolerancia de la prima anticipada de seguro - Valor a &quot; + ${calculoPrimaAnticipadaSeguroRet} + &quot; Valor b &quot; + simulacion.get(&quot;primaAnticipadaSeguro&quot;));
+	  Failure = true;
+	  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+	}
+
+tolerancia = ${calculoCuotaCorrienteRet} - simulacion.get(&quot;cuotaCorriente&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorrienteRet} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
+} else {
+  log.info(&quot; no pasó la tolerancia de la cuota corriente - Valor a &quot; + ${calculoCuotaCorrienteRet} + &quot; Valor b &quot; + simulacion.get(&quot;cuotaCorriente&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoGmf41000Ret} - simulacion.get(&quot;gmf&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia del 4*1000  - Valor a &quot; + ${calculoGmf41000Ret} + &quot; Valor b &quot; + simulacion.get(&quot;gmf&quot;));
+} else {
+  log.info(&quot; no pasó la tolerancia del 4*1000 - Valor a &quot; + ${calculoGmf41000Ret} + &quot; Valor b &quot; + simulacion.get(&quot;gmf&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoResultEstudioCreditoRet} - simulacion.get(&quot;estudioCreditoMasIVA&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la fianza  - Valor a &quot; + ${calculoResultEstudioCreditoRet} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
+} else {
+  log.info(&quot; no pasó la tolerancia de la fianza - Valor a &quot; + ${calculoResultEstudioCreditoRet} + &quot; Valor b &quot; + simulacion.get(&quot;estudioCreditoMasIVA&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+
+tolerancia = ${calculoRemaneteEstimadoRet} - simulacion.get(&quot;remanenteEstimado&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+	  log.info(&quot; pasó la tolerancia del remanente estimado  - Valor a &quot; + ${calculoRemaneteEstimadoRet} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
+	} else {
+	  log.info(&quot; no pasó la tolerancia del remanente estimado - Valor a &quot; + ${calculoRemaneteEstimadoRet} + &quot; Valor b &quot; + simulacion.get(&quot;remanenteEstimado&quot;));
+	  Failure = true;
+	  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+	}
+
+tolerancia = ${calculoResultFianzaRet} - simulacion.get(&quot;valorFianza&quot;);
+if (tolerancia &lt;= 1 &amp;&amp; tolerancia &gt;= 0) {
+  log.info(&quot; pasó la tolerancia de la fianza  - Valor a &quot; + ${calculoResultFianzaRet} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
+} else {
+  log.info(&quot; no pasó la tolerancia de la fianza - Valor a &quot; + ${calculoResultFianzaRet} + &quot; Valor b &quot; + simulacion.get(&quot;valorFianza&quot;));
+  Failure = true;
+  org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
+}
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registrar cliente" enabled="true">
@@ -4444,7 +4485,7 @@ for(int i=0;i&lt;competidor.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4552,7 +4593,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
