@@ -27,7 +27,7 @@
       </ThreadGroup>
       <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="delimiter">;</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">../environment/variablesDigicredito.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
@@ -35,16 +35,11 @@
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">false</boolProp>
-          <stringProp name="variableNames">nombrePagaduria</stringProp>
+          <stringProp name="variableNames">urlOnboarding,nombrePagaduria,idAsesor,nombreOficina,nombreLineaCredito,actividadCliente,tasa,plazo,monto,diasInteresesIniciales,ingresos,descuentosLey,descuentosNomina,nombresCliente,primerNombre,segundoNombre,primerApellido,segundoApellido,identificacion,fechaNacimiento,fechaNacimientoCliente,idDepartamento,idCiudad,tipoIdentificacion,genero,fechaExpedicionDocumento,ciudadExpedicionIdentificacion,celular,email,idUsuario,estrato,claseVivienda,parentesco,nivelEducativo,desprendibleNomina,idTipoVivienda,descuentosPrestacionales,cuotasHipotecariasCentrales,codigoAdo,periodoPrima,entidadBancaria,numeroCuenta,idTipoCuenta,idModalidadDesembolso,idTipoCliente,paisNacimiento,lugarNacimiento,nacionalidad,estadoCivil,profesion,tipoDireccion,barrio,direccion,numeroTelefonico,mesesResidenciaActual,numeroHijos,personasACargo,tieneVehiculo,nombre1,nombre2,apellido1,apellido2,identificacionConyuge,empresaTrabajo,cargoConyuge,telefonoTrabajo,extensionTrabajo,cartaLaboral,fechaIngreso,nitAfiliacion,cargo,tipoPension,codigoProgramaNomina,fechaTerminacion,numeroResolucion,competidor,montoCartera,valorCuota,fechaVencimiento,nombresApellidosBeneficiario,nombresApellidosBeneficiarioDos,porcentaje_asignado,porcentaje_asignadoDos,parentescoAP,parentescoAPDos,nombrePlan,tieneTransaccionExtranjera,transaccionExtranjera,tieneProducto,operacionIntlBanco,operacionIntlPais,operacionIntlCiudad,operacionIntlTipoProducto,operacionIntlNumProducto,operacionIntlMonto,operacionIntlMoneda,funcionarioPublico,manejoRecursosPublicos,expuestoPoliticamente,fechaVinculacion,funcionarioPublicoEntendimiento,representanteOrganizacion,primerNombreRef,segundoNombreRef,primerApellidoRef,segundoApellidoRef,identificacionRef,actividadEconomica,idActividadEconomicaRef,nombreBSV,nombreBSV2,identificacionBSV,identificacionBSV2,fechaNacimientoSap,fechaExpedicionREF,fechaNacimientoREF,contador,idCreditoPadre,creditoPadre</stringProp>
         </CSVDataSet>
         <hashTree/>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments">
-            <elementProp name="urlOnboarding" elementType="Argument">
-              <stringProp name="Argument.name">urlOnboarding</stringProp>
-              <stringProp name="Argument.value">https://development.excelcredit.co/instancia4/api/excelcredit/onboardingservices/</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="token" elementType="Argument">
               <stringProp name="Argument.name">token</stringProp>
               <stringProp name="Argument.value"></stringProp>
@@ -55,24 +50,9 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="nombrePagaduria" elementType="Argument">
-              <stringProp name="Argument.name">nombrePagaduria</stringProp>
-              <stringProp name="Argument.value">ALCALDÍA DE FLORENCIA ACTIVOS</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="calculosSimuladorExterno" elementType="Argument">
               <stringProp name="Argument.name">calculosSimuladorExterno</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idAsesor" elementType="Argument">
-              <stringProp name="Argument.name">idAsesor</stringProp>
-              <stringProp name="Argument.value">758</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombreOficina" elementType="Argument">
-              <stringProp name="Argument.name">nombreOficina</stringProp>
-              <stringProp name="Argument.value">Villavicencio</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idOficina" elementType="Argument">
@@ -80,99 +60,9 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="nombreLineaCredito" elementType="Argument">
-              <stringProp name="Argument.name">nombreLineaCredito</stringProp>
-              <stringProp name="Argument.value">Retanqueo libre inversión</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idLineaCredito" elementType="Argument">
               <stringProp name="Argument.name">idLineaCredito</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="actividadCliente" elementType="Argument">
-              <stringProp name="Argument.name">actividadCliente</stringProp>
-              <stringProp name="Argument.value">&quot;EMPLEADO&quot;</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tasa" elementType="Argument">
-              <stringProp name="Argument.name">tasa</stringProp>
-              <stringProp name="Argument.value">1.8</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="plazo" elementType="Argument">
-              <stringProp name="Argument.name">plazo</stringProp>
-              <stringProp name="Argument.value">50</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="monto" elementType="Argument">
-              <stringProp name="Argument.name">monto</stringProp>
-              <stringProp name="Argument.value">7500000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="diasInteresesIniciales" elementType="Argument">
-              <stringProp name="Argument.name">diasInteresesIniciales</stringProp>
-              <stringProp name="Argument.value">50</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="ingresos" elementType="Argument">
-              <stringProp name="Argument.name">ingresos</stringProp>
-              <stringProp name="Argument.value">8700000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="descuentosLey" elementType="Argument">
-              <stringProp name="Argument.name">descuentosLey</stringProp>
-              <stringProp name="Argument.value">250000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="descuentosNomina" elementType="Argument">
-              <stringProp name="Argument.name">descuentosNomina</stringProp>
-              <stringProp name="Argument.value">300000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombresCliente" elementType="Argument">
-              <stringProp name="Argument.name">nombresCliente</stringProp>
-              <stringProp name="Argument.value">&quot;OSCAR HERNANDEZ MARIN&quot;</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="primerNombre" elementType="Argument">
-              <stringProp name="Argument.name">primerNombre</stringProp>
-              <stringProp name="Argument.value">OSCAR</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="segundoNombre" elementType="Argument">
-              <stringProp name="Argument.name">segundoNombre</stringProp>
-              <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="primerApellido" elementType="Argument">
-              <stringProp name="Argument.name">primerApellido</stringProp>
-              <stringProp name="Argument.value">HERNANDEZ</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="segundoApellido" elementType="Argument">
-              <stringProp name="Argument.name">segundoApellido</stringProp>
-              <stringProp name="Argument.value">MARIN</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="identificacion" elementType="Argument">
-              <stringProp name="Argument.name">identificacion</stringProp>
-              <stringProp name="Argument.value">10092369</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaNacimiento" elementType="Argument">
-              <stringProp name="Argument.name">fechaNacimiento</stringProp>
-              <stringProp name="Argument.value">&quot;1976-05-28&quot;</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaNacimientoCliente" elementType="Argument">
-              <stringProp name="Argument.name">fechaNacimientoCliente</stringProp>
-              <stringProp name="Argument.value">1976-05-28</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="montoCarteras" elementType="Argument">
-              <stringProp name="Argument.name">montoCarteras</stringProp>
-              <stringProp name="Argument.value">200000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idSimulacion" elementType="Argument">
@@ -190,59 +80,9 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="idDepartamento" elementType="Argument">
-              <stringProp name="Argument.name">idDepartamento</stringProp>
-              <stringProp name="Argument.value">CO&gt;Antioquia</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idCiudad" elementType="Argument">
-              <stringProp name="Argument.name">idCiudad</stringProp>
-              <stringProp name="Argument.value">CO&gt;Antioquia&gt;Medellin</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tipoIdentificacion" elementType="Argument">
-              <stringProp name="Argument.name">tipoIdentificacion</stringProp>
-              <stringProp name="Argument.value">CC</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="genero" elementType="Argument">
-              <stringProp name="Argument.name">genero</stringProp>
-              <stringProp name="Argument.value">M</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaExpedicionDocumento" elementType="Argument">
-              <stringProp name="Argument.name">fechaExpedicionDocumento</stringProp>
-              <stringProp name="Argument.value">2002-12-01</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="ciudadExpedicionIdentificacion" elementType="Argument">
-              <stringProp name="Argument.name">ciudadExpedicionIdentificacion</stringProp>
-              <stringProp name="Argument.value">Melgar</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="celular" elementType="Argument">
-              <stringProp name="Argument.name">celular</stringProp>
-              <stringProp name="Argument.value">3183903022</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="email" elementType="Argument">
-              <stringProp name="Argument.name">email</stringProp>
-              <stringProp name="Argument.value">aalvarez@excelcredit.co</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="tokenOTP" elementType="Argument">
               <stringProp name="Argument.name">tokenOTP</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idUsuario" elementType="Argument">
-              <stringProp name="Argument.name">idUsuario</stringProp>
-              <stringProp name="Argument.value">3964</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="estrato" elementType="Argument">
-              <stringProp name="Argument.name">estrato</stringProp>
-              <stringProp name="Argument.value">Estrato 3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idEstrato" elementType="Argument">
@@ -250,19 +90,9 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="claseVivienda" elementType="Argument">
-              <stringProp name="Argument.name">claseVivienda</stringProp>
-              <stringProp name="Argument.value">Apartamento</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idClaseVivienda" elementType="Argument">
               <stringProp name="Argument.name">idClaseVivienda</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="parentesco" elementType="Argument">
-              <stringProp name="Argument.name">parentesco</stringProp>
-              <stringProp name="Argument.value">Jefe de hogar</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idParentesco" elementType="Argument">
@@ -270,49 +100,14 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="nivelEducativo" elementType="Argument">
-              <stringProp name="Argument.name">nivelEducativo</stringProp>
-              <stringProp name="Argument.value">Universitario</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idNivelEducativo" elementType="Argument">
               <stringProp name="Argument.name">idNivelEducativo</stringProp>
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="desprendibleNomina" elementType="Argument">
-              <stringProp name="Argument.name">desprendibleNomina</stringProp>
-              <stringProp name="Argument.value">Desprendible de nómina</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idDesprendibleNomina" elementType="Argument">
               <stringProp name="Argument.name">idDesprendibleNomina</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idTipoVivienda" elementType="Argument">
-              <stringProp name="Argument.name">idTipoVivienda</stringProp>
-              <stringProp name="Argument.value">PROPIA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="descuentosPrestacionales" elementType="Argument">
-              <stringProp name="Argument.name">descuentosPrestacionales</stringProp>
-              <stringProp name="Argument.value">280000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="cuotasHipotecariasCentrales" elementType="Argument">
-              <stringProp name="Argument.name">cuotasHipotecariasCentrales</stringProp>
-              <stringProp name="Argument.value">0</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="codigoAdo" elementType="Argument">
-              <stringProp name="Argument.name">codigoAdo</stringProp>
-              <stringProp name="Argument.value">32112345</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="periodoPrima" elementType="Argument">
-              <stringProp name="Argument.name">periodoPrima</stringProp>
-              <stringProp name="Argument.value">24</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="calculoCuotaCorriente" elementType="Argument">
@@ -360,199 +155,19 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="entidadBancaria" elementType="Argument">
-              <stringProp name="Argument.name">entidadBancaria</stringProp>
-              <stringProp name="Argument.value">Bancolombia</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idEntidadBancaria" elementType="Argument">
               <stringProp name="Argument.name">idEntidadBancaria</stringProp>
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="numeroCuenta" elementType="Argument">
-              <stringProp name="Argument.name">numeroCuenta</stringProp>
-              <stringProp name="Argument.value">2489876354</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idTipoCuenta" elementType="Argument">
-              <stringProp name="Argument.name">idTipoCuenta</stringProp>
-              <stringProp name="Argument.value">AHORROS</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idModalidadDesembolso" elementType="Argument">
-              <stringProp name="Argument.name">idModalidadDesembolso</stringProp>
-              <stringProp name="Argument.value">PAGO_MASIVO</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idTipoCliente" elementType="Argument">
-              <stringProp name="Argument.name">idTipoCliente</stringProp>
-              <stringProp name="Argument.value">Producto Reportado</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="paisNacimiento" elementType="Argument">
-              <stringProp name="Argument.name">paisNacimiento</stringProp>
-              <stringProp name="Argument.value">COLOMBIA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="lugarNacimiento" elementType="Argument">
-              <stringProp name="Argument.name">lugarNacimiento</stringProp>
-              <stringProp name="Argument.value">BOGOTA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nacionalidad" elementType="Argument">
-              <stringProp name="Argument.name">nacionalidad</stringProp>
-              <stringProp name="Argument.value">COLOMBIANA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="estadoCivil" elementType="Argument">
-              <stringProp name="Argument.name">estadoCivil</stringProp>
-              <stringProp name="Argument.value">SOLTERO</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="profesion" elementType="Argument">
-              <stringProp name="Argument.name">profesion</stringProp>
-              <stringProp name="Argument.value">INGENIERO</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tipoDireccion" elementType="Argument">
-              <stringProp name="Argument.name">tipoDireccion</stringProp>
-              <stringProp name="Argument.value">7</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="barrio" elementType="Argument">
-              <stringProp name="Argument.name">barrio</stringProp>
-              <stringProp name="Argument.value">Castilla</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="direccion" elementType="Argument">
-              <stringProp name="Argument.name">direccion</stringProp>
-              <stringProp name="Argument.value">calle 7a bis #79c 23</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="numeroTelefonico" elementType="Argument">
-              <stringProp name="Argument.name">numeroTelefonico</stringProp>
-              <stringProp name="Argument.value">9007145</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="mesesResidenciaActual" elementType="Argument">
-              <stringProp name="Argument.name">mesesResidenciaActual</stringProp>
-              <stringProp name="Argument.value">25</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="numeroHijos" elementType="Argument">
-              <stringProp name="Argument.name">numeroHijos</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="personasACargo" elementType="Argument">
-              <stringProp name="Argument.name">personasACargo</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tieneVehiculo" elementType="Argument">
-              <stringProp name="Argument.name">tieneVehiculo</stringProp>
-              <stringProp name="Argument.value">true</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombre1" elementType="Argument">
-              <stringProp name="Argument.name">nombre1</stringProp>
-              <stringProp name="Argument.value">LORENA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombre2" elementType="Argument">
-              <stringProp name="Argument.name">nombre2</stringProp>
-              <stringProp name="Argument.value">KATERINE</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="apellido1" elementType="Argument">
-              <stringProp name="Argument.name">apellido1</stringProp>
-              <stringProp name="Argument.value">GUZMAN</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="apellido2" elementType="Argument">
-              <stringProp name="Argument.name">apellido2</stringProp>
-              <stringProp name="Argument.value">RAMIREZ</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="identificacionConyuge" elementType="Argument">
-              <stringProp name="Argument.name">identificacionConyuge</stringProp>
-              <stringProp name="Argument.value">52852963</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="empresaTrabajo" elementType="Argument">
-              <stringProp name="Argument.name">empresaTrabajo</stringProp>
-              <stringProp name="Argument.value">MEDERI</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="cargoConyuge" elementType="Argument">
-              <stringProp name="Argument.name">cargoConyuge</stringProp>
-              <stringProp name="Argument.value">ENFERMERA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="telefonoTrabajo" elementType="Argument">
-              <stringProp name="Argument.name">telefonoTrabajo</stringProp>
-              <stringProp name="Argument.value">7210274</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="extensionTrabajo" elementType="Argument">
-              <stringProp name="Argument.name">extensionTrabajo</stringProp>
-              <stringProp name="Argument.value">1285</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="cartaLaboral" elementType="Argument">
-              <stringProp name="Argument.name">cartaLaboral</stringProp>
-              <stringProp name="Argument.value">Certificación laboral</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idCartaLaboral" elementType="Argument">
               <stringProp name="Argument.name">idCartaLaboral</stringProp>
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="fechaIngreso" elementType="Argument">
-              <stringProp name="Argument.name">fechaIngreso</stringProp>
-              <stringProp name="Argument.value">2021-05-25</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nitAfiliacion" elementType="Argument">
-              <stringProp name="Argument.name">nitAfiliacion</stringProp>
-              <stringProp name="Argument.value">45678965</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idCartaLaboral" elementType="Argument">
               <stringProp name="Argument.name">idCartaLaboral</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="cargo" elementType="Argument">
-              <stringProp name="Argument.name">cargo</stringProp>
-              <stringProp name="Argument.value">DESARROLLADOR</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tipoPension" elementType="Argument">
-              <stringProp name="Argument.name">tipoPension</stringProp>
-              <stringProp name="Argument.value">TIEMPO DE SERVICIO</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="codigoProgramaNomina" elementType="Argument">
-              <stringProp name="Argument.name">codigoProgramaNomina</stringProp>
-              <stringProp name="Argument.value">78524</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaTerminacion" elementType="Argument">
-              <stringProp name="Argument.name">fechaTerminacion</stringProp>
-              <stringProp name="Argument.value">2021-05-31</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="numeroResolucion" elementType="Argument">
-              <stringProp name="Argument.name">numeroResolucion</stringProp>
-              <stringProp name="Argument.value">9638524</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="competidor" elementType="Argument">
-              <stringProp name="Argument.name">competidor</stringProp>
-              <stringProp name="Argument.value">AMERICAS BUSINESS PROCESS SERVICES</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idCompetidor" elementType="Argument">
@@ -560,199 +175,14 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="montoCartera" elementType="Argument">
-              <stringProp name="Argument.name">montoCartera</stringProp>
-              <stringProp name="Argument.value">200000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="valorCuota" elementType="Argument">
-              <stringProp name="Argument.name">valorCuota</stringProp>
-              <stringProp name="Argument.value">50000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaVencimiento" elementType="Argument">
-              <stringProp name="Argument.name">fechaVencimiento</stringProp>
-              <stringProp name="Argument.value">2022-05-25</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombresApellidosBeneficiario" elementType="Argument">
-              <stringProp name="Argument.name">nombresApellidosBeneficiario</stringProp>
-              <stringProp name="Argument.value">Andres Alvares</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombresApellidosBeneficiarioDos" elementType="Argument">
-              <stringProp name="Argument.name">nombresApellidosBeneficiarioDos</stringProp>
-              <stringProp name="Argument.value">Thainer Perez</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="porcentaje_asignado" elementType="Argument">
-              <stringProp name="Argument.name">porcentaje_asignado</stringProp>
-              <stringProp name="Argument.value">30</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="porcentaje_asignadoDos" elementType="Argument">
-              <stringProp name="Argument.name">porcentaje_asignadoDos</stringProp>
-              <stringProp name="Argument.value">70</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="parentescoAP" elementType="Argument">
-              <stringProp name="Argument.name">parentescoAP</stringProp>
-              <stringProp name="Argument.value">Amigo</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="parentescoAPDos" elementType="Argument">
-              <stringProp name="Argument.name">parentescoAPDos</stringProp>
-              <stringProp name="Argument.value">Hermano</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombrePlan" elementType="Argument">
-              <stringProp name="Argument.name">nombrePlan</stringProp>
-              <stringProp name="Argument.value">Plan 2</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idNombrePlan" elementType="Argument">
               <stringProp name="Argument.name">idNombrePlan</stringProp>
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="tieneTransaccionExtranjera" elementType="Argument">
-              <stringProp name="Argument.name">tieneTransaccionExtranjera</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="transaccionExtranjera" elementType="Argument">
-              <stringProp name="Argument.name">transaccionExtranjera</stringProp>
-              <stringProp name="Argument.value">EXPORTACIONES</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="tieneProducto" elementType="Argument">
-              <stringProp name="Argument.name">tieneProducto</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="otraCual" elementType="Argument">
               <stringProp name="Argument.name">otraCual</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlBanco" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlBanco</stringProp>
-              <stringProp name="Argument.value">Scotiabanck</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlPais" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlPais</stringProp>
-              <stringProp name="Argument.value">USA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlCiudad" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlCiudad</stringProp>
-              <stringProp name="Argument.value">USA&gt;Alaska&gt;Adak</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlTipoProducto" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlTipoProducto</stringProp>
-              <stringProp name="Argument.value">Cuenta</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlNumProducto" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlNumProducto</stringProp>
-              <stringProp name="Argument.value">254712</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlMonto" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlMonto</stringProp>
-              <stringProp name="Argument.value">1500000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="operacionIntlMoneda" elementType="Argument">
-              <stringProp name="Argument.name">operacionIntlMoneda</stringProp>
-              <stringProp name="Argument.value">USD</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="funcionarioPublico" elementType="Argument">
-              <stringProp name="Argument.name">funcionarioPublico</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="manejoRecursosPublicos" elementType="Argument">
-              <stringProp name="Argument.name">manejoRecursosPublicos</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="expuestoPoliticamente" elementType="Argument">
-              <stringProp name="Argument.name">expuestoPoliticamente</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaVinculacion" elementType="Argument">
-              <stringProp name="Argument.name">fechaVinculacion</stringProp>
-              <stringProp name="Argument.value">02/03/2021</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="funcionarioPublicoEntendimiento" elementType="Argument">
-              <stringProp name="Argument.name">funcionarioPublicoEntendimiento</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="representanteOrganizacion" elementType="Argument">
-              <stringProp name="Argument.name">representanteOrganizacion</stringProp>
-              <stringProp name="Argument.value">false</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="primerNombreRef" elementType="Argument">
-              <stringProp name="Argument.name">primerNombreRef</stringProp>
-              <stringProp name="Argument.value">AMPARO</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="segundoNombreRef" elementType="Argument">
-              <stringProp name="Argument.name">segundoNombreRef</stringProp>
-              <stringProp name="Argument.value">CATALINA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="primerApellidoRef" elementType="Argument">
-              <stringProp name="Argument.name">primerApellidoRef</stringProp>
-              <stringProp name="Argument.value">GUZMAN</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="segundoApellidoRef" elementType="Argument">
-              <stringProp name="Argument.name">segundoApellidoRef</stringProp>
-              <stringProp name="Argument.value">PERILLA</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="identificacionRef" elementType="Argument">
-              <stringProp name="Argument.name">identificacionRef</stringProp>
-              <stringProp name="Argument.value">52741965</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="actividadEconomica" elementType="Argument">
-              <stringProp name="Argument.name">actividadEconomica</stringProp>
-              <stringProp name="Argument.value">SERVICIOS_ESTATALES</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="idActividadEconomicaRef" elementType="Argument">
-              <stringProp name="Argument.name">idActividadEconomicaRef</stringProp>
-              <stringProp name="Argument.value">SERVICIOS_ESTATALES</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombreBSV" elementType="Argument">
-              <stringProp name="Argument.name">nombreBSV</stringProp>
-              <stringProp name="Argument.value">Juan Perez Gomez</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="nombreBSV2" elementType="Argument">
-              <stringProp name="Argument.name">nombreBSV2</stringProp>
-              <stringProp name="Argument.value">Luis Perez Gomez</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="identificacionBSV" elementType="Argument">
-              <stringProp name="Argument.name">identificacionBSV</stringProp>
-              <stringProp name="Argument.value">5412121</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="identificacionBSV2" elementType="Argument">
-              <stringProp name="Argument.name">identificacionBSV2</stringProp>
-              <stringProp name="Argument.value">5412122</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idActividadEconomica" elementType="Argument">
@@ -765,21 +195,6 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="fechaNacimientoSap" elementType="Argument">
-              <stringProp name="Argument.name">fechaNacimientoSap</stringProp>
-              <stringProp name="Argument.value">2000-08-18</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaExpedicionREF" elementType="Argument">
-              <stringProp name="Argument.name">fechaExpedicionREF</stringProp>
-              <stringProp name="Argument.value">01/02/1995</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="fechaNacimientoREF" elementType="Argument">
-              <stringProp name="Argument.name">fechaNacimientoREF</stringProp>
-              <stringProp name="Argument.value">01/02/1965</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="idCreditoOnBase" elementType="Argument">
               <stringProp name="Argument.name">idCreditoOnBase</stringProp>
               <stringProp name="Argument.value"></stringProp>
@@ -788,11 +203,6 @@
             <elementProp name="idOnbase" elementType="Argument">
               <stringProp name="Argument.name">idOnbase</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="contador" elementType="Argument">
-              <stringProp name="Argument.name">contador</stringProp>
-              <stringProp name="Argument.value">0</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="idEstadoCredito" elementType="Argument">
@@ -815,16 +225,6 @@
               <stringProp name="Argument.value"></stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="idCreditoPadre" elementType="Argument">
-              <stringProp name="Argument.name">idCreditoPadre</stringProp>
-              <stringProp name="Argument.value">134950</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="variableMontoCartera" elementType="Argument">
-              <stringProp name="Argument.name">variableMontoCartera</stringProp>
-              <stringProp name="Argument.value">50000</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
             <elementProp name="sumaMontosCarteras" elementType="Argument">
               <stringProp name="Argument.name">sumaMontosCarteras</stringProp>
               <stringProp name="Argument.value"></stringProp>
@@ -833,11 +233,6 @@
             <elementProp name="calculosSimuladorInternoRetanqueo" elementType="Argument">
               <stringProp name="Argument.name">calculosSimuladorInternoRetanqueo</stringProp>
               <stringProp name="Argument.value"></stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-            <elementProp name="creditoPadre" elementType="Argument">
-              <stringProp name="Argument.name">creditoPadre</stringProp>
-              <stringProp name="Argument.value">68003</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="tipoCalculoRetanqueo" elementType="Argument">
@@ -903,6 +298,16 @@
             <elementProp name="saldoAlDia" elementType="Argument">
               <stringProp name="Argument.name">saldoAlDia</stringProp>
               <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="montoCarteras" elementType="Argument">
+              <stringProp name="Argument.name">montoCarteras</stringProp>
+              <stringProp name="Argument.value">200000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="variableMontoCartera" elementType="Argument">
+              <stringProp name="Argument.name">variableMontoCartera</stringProp>
+              <stringProp name="Argument.value">50000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -1282,7 +687,7 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1312,7 +717,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1334,9 +739,9 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: &quot;CC&quot;,&#xd;
+        &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;,&#xd;
         &quot;celular&quot;: ${celular},&#xd;
         &quot;email&quot;: &quot;${email}&quot;&#xd;
     }&#xd;
@@ -1535,7 +940,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: &quot;CC&quot;,&#xd;
+        &quot;tipoIdentificacion&quot;: ${tipoIdentificacion},&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
         &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
         &quot;celular&quot;: ${celular},&#xd;
@@ -1722,7 +1127,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select round(saldo_al_dia) as saldo_al_dia from saldo_al_dia sad where id_credito = ${idCreditoPadre};</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1744,7 +1149,7 @@ vars.put(&quot;saldoAlDia&quot;, saldoAlDia.get(0).get(&quot;saldo_al_dia&quot;)
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1766,9 +1171,9 @@ vars.put(&quot;saldoAlDia&quot;, saldoAlDia.get(0).get(&quot;saldo_al_dia&quot;)
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: &quot;CC&quot;,&#xd;
+        &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;,&#xd;
         &quot;celular&quot;: ${celular},&#xd;
         &quot;email&quot;: &quot;${email}&quot;&#xd;
     }&#xd;
@@ -1887,7 +1292,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: &quot;CC&quot;,&#xd;
+        &quot;tipoIdentificacion&quot;: ${tipoIdentificacion},&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
         &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
         &quot;celular&quot;: ${celular},&#xd;
@@ -1994,7 +1399,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_simulador_interno_retanqueo_adp (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -4485,7 +3890,7 @@ for(int i=0;i&lt;competidor.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4506,7 +3911,7 @@ for(int i=0;i&lt;competidor.length();i++){
     &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
     }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -4717,7 +4122,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4737,7 +4142,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
     &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
     }&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
