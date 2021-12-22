@@ -1,31 +1,7 @@
-
---Crear
-create or replace
-function public.calculos_automatizacion_pruebas (
-  p_monto integer,
-p_xperiodoPrima integer,
-p_tasaInicial numeric,
-p_plazo numeric,
-p_diasIniciales numeric,
-p_vlrCompasSaneamientos numeric,
-p_ingresos numeric,
-p_descLey numeric,
-p_descNomina numeric,
-p_pagaduria text 
-)
-returns table (
-r_monto_solicitar int,
-r_cuota_corriente int,
-r_estudio_credito_iva int,
-r_fianza int,
-r_gmf4100 int,
-r_valor_intereses_iniciales int,
-r_prima_anticipada_seguro int,
-r_remanente_estimado int,
-r_monto_max_desembolsar int
-)
-language plpgsql
-as $function$
+CREATE OR REPLACE FUNCTION public.calculos_automatizacion_pruebas(p_monto integer, p_xperiodoprima integer, p_tasainicial numeric, p_plazo numeric, p_diasiniciales numeric, p_vlrcompassaneamientos numeric, p_ingresos numeric, p_descley numeric, p_descnomina numeric, p_pagaduria text)
+ RETURNS TABLE(r_monto_solicitar integer, r_cuota_corriente integer, r_estudio_credito_iva integer, r_fianza integer, r_gmf4100 integer, r_valor_intereses_iniciales integer, r_prima_anticipada_seguro integer, r_remanente_estimado integer, r_monto_max_desembolsar integer, r_capacidad_cliente integer)
+ LANGUAGE plpgsql
+AS $function$
 
 declare
 -- ============================================================================
@@ -168,6 +144,9 @@ raise notice 'Remanente Estimado %', (r_remanente_estimado);
 	/*Calcular Monto Maximo a Desembolsar -  originacion*/
 
 v_capacidad := ((p_ingresos - p_descLey) / 2) - p_descNomina - v_colchon;
+raise notice 'Capacidad Cliente %', (v_capacidad);
+
+r_capacidad_cliente := v_capacidad;
 --Logica
 if (p_plazo < v_vlr_mes_dos) then
 	r_monto_max_desembolsar := v_capacidad * ((power((1 + v_tasa_uno),(p_plazo))) - 1) / (v_tasa_uno * power((1 + v_tasa_uno),(p_plazo)));
@@ -191,8 +170,9 @@ coalesce (r_gmf4100,0),
 coalesce (r_valor_intereses_iniciales,0),
 coalesce (r_prima_anticipada_seguro,0),
 coalesce (r_remanente_estimado,0),
-coalesce (r_monto_max_desembolsar,0);
+coalesce (r_monto_max_desembolsar,0),
+coalesce (r_capacidad_cliente,0);
 end;
 
 $function$
---
+;
