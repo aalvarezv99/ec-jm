@@ -681,13 +681,18 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
 	vars.put(&quot;montoCarteras&quot;, &quot;0&quot;);
 	vars.put(&quot;sumaMontosCarteras&quot;, &quot;0&quot;);
 } else {
-	int cartera =${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)};
-	vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());
+	if (!vars.get(&quot;variableMontoCartera&quot;).equals(&quot;0&quot;)) {
+		int cartera =${__intSum(${montoCarteras},${__intSum(${montoCarteras},${variableMontoCartera},)},)};
+		vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());
+	} else {
+		int cartera =${__intSum(${montoCarteras},)};
+		vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());}	
+	}
 }</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -717,7 +722,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1127,7 +1132,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select round(saldo_al_dia) as saldo_al_dia from saldo_al_dia sad where id_credito = ${idCreditoPadre};</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1270,7 +1275,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1292,18 +1297,21 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: ${tipoIdentificacion},&#xd;
+        &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;,&#xd;
         &quot;celular&quot;: ${celular},&#xd;
         &quot;email&quot;: &quot;${email}&quot;&#xd;
     },&#xd;
     &quot;carteras&quot;: [&#xd;
         {&#xd;
-          &quot;monto&quot;: ${montoCarteras}&#xd;
+          &quot;monto&quot;: 1500000&#xd;
         },&#xd;
         {&#xd;
-        	&quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)}&#xd;
+        	&quot;monto&quot;: 2000000&#xd;
+        },&#xd;
+        {&#xd;
+        	&quot;monto&quot;: 3000000&#xd;
         }&#xd;
     ]&#xd;
 }</stringProp>
@@ -1399,7 +1407,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_simulador_interno_retanqueo_adp (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -3718,6 +3726,13 @@ for(int i=0;i&lt;actividadEconomica.length();i++){
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">exstensionTelefonoTrabajo</stringProp>
               </elementProp>
+              <elementProp name="codigoProgramaNomina" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">32165</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">codigoProgramaNomina</stringProp>
+              </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain"></stringProp>
@@ -3998,7 +4013,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4019,19 +4034,26 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
     &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
     },&#xd;
     &quot;carteras&quot;: [&#xd;
       {&#xd;
          &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-         &quot;monto&quot;: ${montoCarteras},&#xd;
+         &quot;monto&quot;: 1500000,&#xd;
          &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
          &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
          &quot;noObligacion&quot;: 1&#xd;
       },&#xd;
       {&#xd;
          &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-         &quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)},&#xd;
+         &quot;monto&quot;: 2000000,&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: 3000000,&#xd;
          &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
          &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
          &quot;noObligacion&quot;: 1&#xd;
@@ -4122,7 +4144,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4534,7 +4556,89 @@ for(int i=0;i&lt;paquetesSeguroAP.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar seguro AP" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Omitir etapa de seguro AP" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/state/EN_REGISTRO_REFERENCIAS</stringProp>
+          <stringProp name="HTTPSampler.method">PATCH</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar seguro AP" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
