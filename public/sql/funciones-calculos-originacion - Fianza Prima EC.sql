@@ -12,11 +12,11 @@ p_descNomina numeric,
 p_pagaduria text
 */
 --Probar Funcion
---select * from public.calculos_automatizacion_pruebas (19989718,24,1.8,25,120,0,3700000,0,0,'ALCALDÍA MUNICIPAL DE ARMENIA NÓMINA JUBILADOS');
+--select * from public.calculos_automatizacion_pruebas_fianza(20311513,24,1.70,25,120,0,2000000,250000,0,'ALCALDÍA MUNICIPAL DE ARMENIA NÓMINA JUBILADOS');
 --Eliminar Funcion 
---DROP FUNCTION calculos_automatizacion_pruebas(integer, integer, numeric, numeric, numeric, numeric, numeric, numeric, numeric, text);
+--DROP FUNCTION calculos_automatizacion_pruebas_fianza(integer, integer, numeric, numeric, numeric, numeric, numeric, numeric, numeric, text);
 --Crear Funcion
-CREATE OR REPLACE FUNCTION public.calculos_automatizacion_pruebas(p_monto integer,
+CREATE OR REPLACE FUNCTION public.calculos_automatizacion_pruebas_fianza(p_monto integer,
 p_xperiodoprima integer,
 p_tasainicial NUMERIC,
 p_plazo NUMERIC,
@@ -124,7 +124,7 @@ where
 
 -- ============================================================================
 -- Autor: Equipo automatizacion Pruebas.
--- Fecha: 27/Dic/2021 Version 1.1 Jonathan Varon
+-- Fecha: 07/Enero/2022 Version 1.2 Jonathan Varon
 -- Se crea la funcion que retorna los calculos de originacion para los simuladores con el nuevo Calculo
 -- ============================================================================
 
@@ -185,7 +185,7 @@ raise notice 'Remanente Estimado %', (r_remanente_estimado);
 
 	/* Calcular Valor Pantalla  - Monto del credito*/
 
-v_monto_solicitar_pantalla := round (r_remanente_estimado/((1-(((v_tasaXmillonSeguro/1000)/1000000)*1000)*p_xperiodoprima)-((v_tasa_fianza/100)*1.19)-(v_tasa_estudio_credito*1.19)));
+v_monto_solicitar_pantalla := round (r_remanente_estimado/((1-(((v_tasaXmillonSeguro/1000)/1000000)*1000)*p_xperiodoprima)-((v_tasa_fianza/100)*1.19)-((v_tasa_estudio_credito/100)*1.19)));
 raise notice 'Valor Monto Pantalla %', (v_monto_solicitar_pantalla);
 
 	/* Validacion Comparacion monto catulado y monto pantalla */
