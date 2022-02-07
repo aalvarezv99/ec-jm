@@ -332,6 +332,25 @@
           <stringProp name="username">abacus</stringProp>
         </JDBCDataSource>
         <hashTree/>
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Token" enabled="true">
+          <boolProp name="autocommit">true</boolProp>
+          <stringProp name="checkQuery">select 1</stringProp>
+          <stringProp name="connectionAge">5000</stringProp>
+          <stringProp name="connectionProperties"></stringProp>
+          <stringProp name="dataSource">tokenDB</stringProp>
+          <stringProp name="dbUrl">jdbc:postgresql://libranzas-aplicaciones.chimul6agbmw.us-east-1.rds.amazonaws.com:5432/token_instancia4</stringProp>
+          <stringProp name="driver">org.postgresql.Driver</stringProp>
+          <stringProp name="initQuery"></stringProp>
+          <boolProp name="keepAlive">true</boolProp>
+          <stringProp name="password">70K3n&amp;EC2013</stringProp>
+          <stringProp name="poolMax">10</stringProp>
+          <boolProp name="preinit">false</boolProp>
+          <stringProp name="timeout">10000</stringProp>
+          <stringProp name="transactionIsolation">DEFAULT</stringProp>
+          <stringProp name="trimInterval">60000</stringProp>
+          <stringProp name="username">token</stringProp>
+        </JDBCDataSource>
+        <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Obtener Token" enabled="true">
@@ -688,11 +707,11 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
 		int cartera =${__intSum(${montoCarteras},)};
 		vars.put(&quot;sumaMontosCarteras&quot;,cartera.toString());}	
 	}
-}</stringProp>
+</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="false">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -722,7 +741,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -742,6 +761,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
     &quot;ingresos&quot;: ${ingresos},&#xd;
     &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
+    &quot;medioContacto&quot;: &quot;ASESOR&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
         &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
@@ -783,7 +803,7 @@ vars.put(&quot;calculoFianza&quot;, calculosSimuladorExterno.get(0).get(&quot;r_
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
             <stringProp name="BeanShellAssertion.query">import org.json.*;
 
 boolean Estado=prev.isResponseCodeOK();
@@ -1132,7 +1152,7 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno retanqueo - consultar saldo al día" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select round(saldo_al_dia) as saldo_al_dia from saldo_al_dia sad where id_credito = ${idCreditoPadre};</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1275,7 +1295,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1407,7 +1427,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_simulador_interno_retanqueo_adp (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
           <stringProp name="queryArguments"></stringProp>
@@ -1727,110 +1747,13 @@ if(registrarCliente.get(&quot;idCliente&quot;)==null || registrarCliente.get(&qu
 
 String response_data = prev.getResponseDataAsString ();
 JSONObject RegistrarCliente = new JSONObject(response_data);
+
 log.info(&quot;Id credito nuevo: &quot;+RegistrarCliente.get(&quot;idCredito&quot;));
 log.info(&quot;Id cliente nuevo: &quot;+RegistrarCliente.get(&quot;idCliente&quot;));
 vars.put(&quot;idCredito&quot;,RegistrarCliente.get(&quot;idCredito&quot;).toString());	 
 vars.put(&quot;idCliente&quot;,RegistrarCliente.get(&quot;idCliente&quot;).toString());	     
 </stringProp>
           </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Finalizar registro de cliente" enabled="true">
-          <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
-            <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="../public/img/cliente.jpg" elementType="HTTPFileArg">
-                <stringProp name="File.path">../public/img/cliente.jpg</stringProp>
-                <stringProp name="File.paramname">archivoFoto</stringProp>
-                <stringProp name="File.mimetype">image/jpg</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="validacionIdentidad" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">false</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">validacionIdentidad</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/clients/finalize</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Authorization" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer   ${token}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
-Failure=!Estado;
-FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
-
-
-
-</stringProp>
-            <stringProp name="BeanShellAssertion.filename"></stringProp>
-            <stringProp name="BeanShellAssertion.parameters"></stringProp>
-            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-          </BeanShellAssertion>
-          <hashTree/>
-          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar notificación OTP prospección" enabled="true">
@@ -1882,17 +1805,6 @@ boolean Estado=prev.isResponseCodeOK();
 Failure=!Estado;
 FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
 
-String response_data = prev.getResponseDataAsString ();
-JSONObject prospeccionOTP= new JSONObject(response_data);
-
-if(prospeccionOTP==null || prospeccionOTP.get(&quot;token&quot;)==null){
-	Failure=true;
-	FailureMessage=&quot;Response de la simulacion errada, no se genero token&quot;;	
-	org.apache.jmeter.engine.Standard3MeterEngine.stopsThread(Thread.currentThread().getName());
-  }
-  
-log.info(&quot;Token de Prospeccion : &quot;+ prospeccionOTP.get(&quot;token&quot;));
-vars.put(&quot;tokenOTP&quot;,prospeccionOTP.get(&quot;token&quot;).toString());	 
 </stringProp>
             <stringProp name="BeanShellAssertion.filename"></stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
@@ -1935,6 +1847,29 @@ vars.put(&quot;tokenOTP&quot;,prospeccionOTP.get(&quot;token&quot;).toString());
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Token" enabled="true">
+          <stringProp name="dataSource">tokenDB</stringProp>
+          <stringProp name="query">select o.token from otp o where id_cliente = &apos;${idCliente}&apos;;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="resultVariable">tokenOTP</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">Object value = vars.getObject(&quot;tokenOTP&quot;);
+vars.put(&quot;tokenOTP&quot;, value.get(0).get(&quot;token&quot;).toString());
+</stringProp>
+          </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar prospección" enabled="true">
@@ -2040,6 +1975,10 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           <stringProp name="WhileController.condition">${__BeanShell((&quot;${idEstado}&quot; == &quot;&quot; || &quot;${idEstado}&quot; != &quot;PROSPECCION_EXITOSA&quot;) &amp;&amp; ${contador} &lt; 10,)}</stringProp>
         </WhileController>
         <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">80000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
           <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
             <stringProp name="CounterConfig.start">1</stringProp>
             <stringProp name="CounterConfig.end"></stringProp>
@@ -2602,45 +2541,6 @@ for(int i=0;i&lt;documento.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller score PRUEBA" enabled="false">
-          <stringProp name="TestPlan.comments">Dejar apagado</stringProp>
-          <stringProp name="WhileController.condition">${__BeanShell(&quot;${datascore}&quot; == &quot;&quot;,)}</stringProp>
-        </WhileController>
-        <hashTree>
-          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-            <stringProp name="CounterConfig.start">1</stringProp>
-            <stringProp name="CounterConfig.end"></stringProp>
-            <stringProp name="CounterConfig.incr">1</stringProp>
-            <stringProp name="CounterConfig.name">contador</stringProp>
-            <stringProp name="CounterConfig.format"></stringProp>
-            <boolProp name="CounterConfig.per_user">false</boolProp>
-          </CounterConfig>
-          <hashTree/>
-          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request Endeudamiento Global" enabled="true">
-            <stringProp name="dataSource">postgres</stringProp>
-            <stringProp name="query">select id_credito from endeudamiento_global eg where id_credito =&apos;${idCredito}&apos;;</stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as Object</stringProp>
-            <stringProp name="resultSetMaxRows"></stringProp>
-            <stringProp name="resultVariable">score</stringProp>
-            <stringProp name="variableNames"></stringProp>
-          </JDBCSampler>
-          <hashTree>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script">Object data = vars.getObject(&quot;score&quot;);
-if(data !=&quot;&quot;){	
-	vars.put(&quot;datascore&quot;, data.get(0).get(&quot;id_credito&quot;).toString());
-	}</stringProp>
-            </BeanShellPostProcessor>
-            <hashTree/>
-          </hashTree>
-        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Notificar finalización de prospección" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -2661,7 +2561,7 @@ if(data !=&quot;&quot;){
         </HTTPSamplerProxy>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">70000</stringProp>
+            <stringProp name="ConstantTimer.delay">30000</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -4013,7 +3913,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4144,7 +4044,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4556,7 +4456,7 @@ for(int i=0;i&lt;paquetesSeguroAP.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Omitir etapa de seguro AP" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Omitir etapa de seguro AP" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -4760,7 +4660,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar referencias personales y familiares" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar referencias personales y familiares" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4961,7 +4861,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar beneficiarios de seguro de vida" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar beneficiarios de seguro de vida" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5073,7 +4973,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar operaciones internacionales" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar operaciones internacionales" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5176,7 +5076,7 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar personas expuestas políticamente" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar personas expuestas políticamente" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5272,7 +5172,7 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar OTP para firma de documentos" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar OTP para firma de documentos" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5376,7 +5276,7 @@ vars.put(&quot;tokenFirma&quot;,firma.get(&quot;token&quot;).toString());
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar firma de documentos" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar firma de documentos" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5475,7 +5375,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Iniciar radicación de crédito" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Iniciar radicación de crédito" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
