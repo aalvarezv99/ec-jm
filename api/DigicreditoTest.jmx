@@ -302,12 +302,12 @@
             </elementProp>
             <elementProp name="montoCarteras" elementType="Argument">
               <stringProp name="Argument.name">montoCarteras</stringProp>
-              <stringProp name="Argument.value">200000</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="variableMontoCartera" elementType="Argument">
               <stringProp name="Argument.name">variableMontoCartera</stringProp>
-              <stringProp name="Argument.value">50000</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -711,9 +711,9 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">select * from public.calculos_automatizacion_pruebas (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
+          <stringProp name="query">select * from public.calculos_automatizacion_pruebas_originacion (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -963,11 +963,12 @@ vars.put(&quot;idSimulacion&quot;, simulacion.get(&quot;idSimulacion&quot;).toSt
     &quot;ingresos&quot;: ${ingresos},&#xd;
     &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
+    &quot;medioContacto&quot;: &quot;ASESOR&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
-        &quot;tipoIdentificacion&quot;: ${tipoIdentificacion},&#xd;
+        &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
         &quot;identificacion&quot;: ${identificacion},&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento},&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;,&#xd;
         &quot;celular&quot;: ${celular},&#xd;
         &quot;email&quot;: &quot;${email}&quot;&#xd;
     },&#xd;
@@ -1185,15 +1186,16 @@ vars.put(&quot;saldoAlDia&quot;, saldoAlDia.get(0).get(&quot;saldo_al_dia&quot;)
     &quot;idAsesor&quot; : ${idAsesor},&#xd;
     &quot;idOficina&quot; : ${idOficina},&#xd;
     &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
-    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
+    &quot;idCreditoPadre&quot;: [${idCreditoPadre}],&#xd;
     &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
     &quot;tasa&quot;: ${tasa},&#xd;
     &quot;plazo&quot;: ${plazo},&#xd;
-    &quot;monto&quot;: ${monto},&#xd;
+    &quot;monto&quot;: ${__intSum(${monto},${saldoAlDia},)},&#xd;
     &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
     &quot;ingresos&quot;: ${ingresos},&#xd;
     &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
+    &quot;medioContacto&quot;: &quot;ASESOR&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
         &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
@@ -1306,7 +1308,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
     &quot;idAsesor&quot; : ${idAsesor},&#xd;
     &quot;idOficina&quot; : ${idOficina},&#xd;
     &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
-    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
+    &quot;idCreditoPadre&quot;: [${idCreditoPadre}],&#xd;
     &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
     &quot;tasa&quot;: ${tasa},&#xd;
     &quot;plazo&quot;: ${plazo},&#xd;
@@ -1315,6 +1317,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
     &quot;ingresos&quot;: ${ingresos},&#xd;
     &quot;descuentosLey&quot;: ${descuentosLey},&#xd;
     &quot;descuentosNomina&quot;: ${descuentosNomina},&#xd;
+    &quot;medioContacto&quot;: &quot;ASESOR&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;nombres&quot;: ${nombresCliente},&#xd;
         &quot;tipoIdentificacion&quot;: &quot;${tipoIdentificacion}&quot;,&#xd;
@@ -1325,13 +1328,10 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
     },&#xd;
     &quot;carteras&quot;: [&#xd;
         {&#xd;
-          &quot;monto&quot;: 1500000&#xd;
+          &quot;monto&quot;: ${montoCarteras}&#xd;
         },&#xd;
         {&#xd;
-        	&quot;monto&quot;: 2000000&#xd;
-        },&#xd;
-        {&#xd;
-        	&quot;monto&quot;: 3000000&#xd;
+        	&quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)}&#xd;
         }&#xd;
     ]&#xd;
 }</stringProp>
@@ -1429,7 +1429,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
         </hashTree>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador interno - retanqueo" enabled="false">
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">select * from public.calculos_simulador_interno_retanqueo_adp (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
+          <stringProp name="query">select * from public.calculos_simulador_retanqueo (${creditoPadre}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${montoSimulacionRetanqueo}, ${sumaMontosCarteras});</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -1851,7 +1851,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
         </hashTree>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Token" enabled="true">
           <stringProp name="dataSource">tokenDB</stringProp>
-          <stringProp name="query">select o.token from otp o where id_cliente = &apos;${idCliente}&apos;;</stringProp>
+          <stringProp name="query">select o.token from otp o where id_cliente = &apos;${idCliente}&apos;order by id desc limit 1;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -1902,7 +1902,7 @@ vars.put(&quot;tokenOTP&quot;, value.get(0).get(&quot;token&quot;).toString());
         </HTTPSamplerProxy>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">50000</stringProp>
+            <stringProp name="ConstantTimer.delay">80000</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -2561,7 +2561,7 @@ for(int i=0;i&lt;documento.length();i++){
         </HTTPSamplerProxy>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">30000</stringProp>
+            <stringProp name="ConstantTimer.delay">80000</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -3805,245 +3805,6 @@ for(int i=0;i&lt;competidor.length();i++){
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="false">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
-    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
-    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
-    &quot;idOficina&quot; : ${idOficina},&#xd;
-    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
-    &quot;tasa&quot;: ${tasa},&#xd;
-    &quot;plazo&quot;: ${plazo},&#xd;
-    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
-    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
-    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
-    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
-    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
-    &quot;cliente&quot;:{&#xd;
-        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
-    }&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
-          <stringProp name="HTTPSampler.method">PUT</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Authorization" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer   ${token}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">content-type</stringProp>
-                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
-Failure=!Estado;
-FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
-
-
-</stringProp>
-            <stringProp name="BeanShellAssertion.filename"></stringProp>
-            <stringProp name="BeanShellAssertion.parameters"></stringProp>
-            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-          </BeanShellAssertion>
-          <hashTree/>
-          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-    &quot;idCreditoPadre&quot;: ${idCreditoPadre},&#xd;
-    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
-    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
-    &quot;idOficina&quot; : ${idOficina},&#xd;
-    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
-    &quot;tasa&quot;: ${tasa},&#xd;
-    &quot;plazo&quot;: ${plazo},&#xd;
-    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
-    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
-    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
-    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
-    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
-    &quot;cliente&quot;:{&#xd;
-        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
-    },&#xd;
-    &quot;carteras&quot;: [&#xd;
-      {&#xd;
-         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-         &quot;monto&quot;: 1500000,&#xd;
-         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
-         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
-         &quot;noObligacion&quot;: 1&#xd;
-      },&#xd;
-      {&#xd;
-         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-         &quot;monto&quot;: 2000000,&#xd;
-         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
-         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
-         &quot;noObligacion&quot;: 1&#xd;
-      },&#xd;
-      {&#xd;
-         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
-         &quot;monto&quot;: 3000000,&#xd;
-         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
-         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
-         &quot;noObligacion&quot;: 1&#xd;
-      }&#xd;
-    ]&#xd;
-}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
-          <stringProp name="HTTPSampler.method">PUT</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Authorization" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer   ${token}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">content-type</stringProp>
-                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-            <stringProp name="BeanShellAssertion.query">import org.json.*;
-
-boolean Estado=prev.isResponseCodeOK();
-Failure=!Estado;
-FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
-
-
-</stringProp>
-            <stringProp name="BeanShellAssertion.filename"></stringProp>
-            <stringProp name="BeanShellAssertion.parameters"></stringProp>
-            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-          </BeanShellAssertion>
-          <hashTree/>
-          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
-        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación libre inversion" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -4171,7 +3932,239 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
     &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
     &quot;cliente&quot;:{&#xd;
         &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
-        &quot;fechaNacimiento&quot;: ${fechaNacimiento}&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
+    },&#xd;
+    &quot;carteras&quot;: [&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${montoCarteras},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      },&#xd;
+      {&#xd;
+         &quot;idCompetidor&quot;: ${idCompetidor},&#xd;
+         &quot;monto&quot;: ${__intSum(${montoCarteras},${variableMontoCartera},)},&#xd;
+         &quot;valorCuota&quot;: &quot;${valorCuota}&quot;,&#xd;
+         &quot;fechaVencimiento&quot;: &quot;${fechaVencimiento}&quot;,&#xd;
+         &quot;noObligacion&quot;: 1&#xd;
+      }&#xd;
+    ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo libre inversion" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idCreditoPadre&quot;: [${idCreditoPadre}],&#xd;
+    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
+    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
+    &quot;idOficina&quot; : ${idOficina},&#xd;
+    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
+    &quot;tasa&quot;: ${tasa},&#xd;
+    &quot;plazo&quot;: ${plazo},&#xd;
+    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
+    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
+    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
+    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
+    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
+    }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${urlOnboarding}credits/${idCredito}/simulation-data</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer   ${token}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+            <stringProp name="BeanShellAssertion.query">import org.json.*;
+
+boolean Estado=prev.isResponseCodeOK();
+Failure=!Estado;
+FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de estado incorrecto&quot; ;
+
+
+</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar datos de simulación retanqueo con carteras" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;idCreditoPadre&quot;: [${idCreditoPadre}],&#xd;
+    &quot;idLineaCredito&quot;: ${idLineaCredito},&#xd;
+    &quot;idPagaduria&quot;: ${idPagaduria},&#xd;
+    &quot;idOficina&quot; : ${idOficina},&#xd;
+    &quot;actividadCliente&quot;: ${actividadCliente},&#xd;
+    &quot;tasa&quot;: ${tasa},&#xd;
+    &quot;plazo&quot;: ${plazo},&#xd;
+    &quot;monto&quot;: &quot;${monto}&quot;,&#xd;
+    &quot;diasInteresesIniciales&quot;: ${diasInteresesIniciales},&#xd;
+    &quot;ingresos&quot;: &quot;${ingresos}&quot;,&#xd;
+    &quot;descuentosNomina&quot;: &quot;${descuentosNomina}&quot;,&#xd;
+    &quot;descuentosLey&quot;: &quot;${descuentosLey}&quot;,&#xd;
+    &quot;cliente&quot;:{&#xd;
+        &quot;identificacion&quot;: &quot;${identificacion}&quot;,&#xd;
+        &quot;fechaNacimiento&quot;: &quot;${fechaNacimiento}&quot;&#xd;
     },&#xd;
     &quot;carteras&quot;: [&#xd;
       {&#xd;
@@ -4538,7 +4531,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar seguro AP" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar seguro AP" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4660,7 +4653,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar referencias personales y familiares" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar referencias personales y familiares" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4861,7 +4854,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar beneficiarios de seguro de vida" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar beneficiarios de seguro de vida" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -4973,7 +4966,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar operaciones internacionales" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar operaciones internacionales" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5076,7 +5069,7 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar personas expuestas políticamente" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar personas expuestas políticamente" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5172,7 +5165,7 @@ FailureMessage = Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo d
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar OTP para firma de documentos" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Enviar OTP para firma de documentos" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5276,7 +5269,7 @@ vars.put(&quot;tokenFirma&quot;,firma.get(&quot;token&quot;).toString());
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar firma de documentos" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Aceptar firma de documentos" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -5375,7 +5368,7 @@ FailureMessage=Estado ? &quot;Codigo de estado correcto&quot; : &quot;Codigo de 
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Iniciar radicación de crédito" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Iniciar radicación de crédito" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
