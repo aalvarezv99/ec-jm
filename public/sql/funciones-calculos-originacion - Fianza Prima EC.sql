@@ -12,11 +12,11 @@ p_descNomina numeric,
 p_pagaduria text
 */
 --Probar Funcion
---select * from public.calculos_automatizacion_pruebas_fianza(20311513,24,1.70,25,120,0,2000000,250000,0,'ALCALDÍA MUNICIPAL DE ARMENIA NÓMINA JUBILADOS');
---Eliminar Funcion 
---DROP FUNCTION calculos_automatizacion_pruebas_fianza(integer, integer, numeric, numeric, numeric, numeric, numeric, numeric, numeric, text);
+select * from public.calculos_automatizacion_pruebas_originacion(19073729,24,1.70,24,120,0,6500000,150000,250000,'ALCALDIA DE CALI JUBILADOS Y PENSIONADOS');
+--Eliminar Funcion
+DROP FUNCTION calculos_automatizacion_pruebas(integer, integer, numeric, numeric, numeric, numeric, numeric, numeric, numeric, text);
 --Crear Funcion
-CREATE OR REPLACE FUNCTION public.calculos_automatizacion_pruebas_fianza(p_monto integer,
+CREATE OR REPLACE FUNCTION public.calculos_automatizacion_pruebas(p_monto integer,
 p_xperiodoprima integer,
 p_tasainicial NUMERIC,
 p_plazo NUMERIC,
@@ -45,8 +45,9 @@ AS $function$
 declare
 -- ============================================================================
 -- Autor: Equipo automatizacion Pruebas.
--- Fecha: 08/Nov/2021 Version 1.0 ThainerPerez - Jonathan Varon
+-- Fecha: 09/Ene/2022 Version 1.2 Jonathan Varon - ThainerPerez
 -- Se crea la funcion que retorna los calculos de originacion para los simuladores
+-- Se Elimino el valor de colchon para el calculo de capacidad cliente
 -- ============================================================================
 
 
@@ -199,7 +200,8 @@ end if;
 
 	/*Calcular Monto Maximo a Desembolsar -  originacion*/
 
-v_capacidad := ((p_ingresos - p_descLey) / 2) - p_descNomina - v_colchon;
+v_capacidad := ((p_ingresos - p_descLey) / 2) - p_descNomina;-- - v_colchon;
+raise notice 'Colchon Cliente %', (v_colchon);
 raise notice 'Capacidad Cliente %', (v_capacidad);
 
 r_capacidad_cliente := v_capacidad;
