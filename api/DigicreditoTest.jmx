@@ -718,7 +718,7 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
         </hashTree>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Actualizar usuario Autorizado" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
-          <stringProp name="query">update cliente set id_asesor_autorizado = &apos;758&apos; where identificacion =&apos;1017171608&apos;;
+          <stringProp name="query">update cliente set id_asesor_autorizado = &apos;758&apos; where identificacion =&apos;${identificacion}&apos;;
 </stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
