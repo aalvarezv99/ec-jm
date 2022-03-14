@@ -716,6 +716,20 @@ if(vars.get(&quot;idLineaCredito&quot;).contains(&quot;1&quot;) || vars.get(&quo
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Actualizar usuario Autorizado" enabled="true">
+          <stringProp name="dataSource">postgres</stringProp>
+          <stringProp name="query">update cliente set id_asesor_autorizado = &apos;758&apos; where identificacion =&apos;1017171608&apos;;
+</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Update Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC simulador externo - originacion" enabled="true">
           <stringProp name="dataSource">postgres</stringProp>
           <stringProp name="query">select * from public.calculos_automatizacion_pruebas_originacion (${monto}, ${periodoPrima}, ${tasa}, ${plazo}, ${diasInteresesIniciales}, ${sumaMontosCarteras}, ${ingresos}, ${descuentosLey}, ${descuentosNomina}, &apos;${nombrePagaduria}&apos;);</stringProp>
@@ -1303,6 +1317,7 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Guardar simulación retanqueo con cartera" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
@@ -1343,7 +1358,6 @@ vars.put(&quot;responseSaveSimulacionRetanqueo&quot;, response_data);</stringPro
               </elementProp>
             </collectionProp>
           </elementProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
